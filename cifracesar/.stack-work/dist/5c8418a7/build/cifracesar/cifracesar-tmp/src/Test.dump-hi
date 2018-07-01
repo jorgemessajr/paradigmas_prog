@@ -1,0 +1,91 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-01 19:33:41.8642961 UTC
+
+interface main:Test 8022
+  interface hash: 6b589e5f07466b247bcb0f070a38040e
+  ABI hash: ae6b3a6ba74f9cc1100c0298dc60234b
+  export-list hash: 3d0b96d434748ab114f4e36b24bc2b50
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6479d275bf4fea4bc461aae0c799f9e2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Test.prop_enc_length
+  Test.prop_neg_shift
+module dependencies: Cesar
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.Foldable 4349255461f1285ad885cd2301205c36
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  Cesar 4a3f769dfe66034cb8df839ed66ad118
+  exports: 013dd32312f8004ab411bcca7b629d71
+  encode 68c9e6414064b3bfedd49640c7381df1
+  shift a9377e2c162d641313e9a4372d181a22
+49c2f880e698462b6c9e783f080761f8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Test.$trModule3 Test.$trModule1) -}
+84be1bc9e8181ea2b66be9295e013b7d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Test.$trModule2) -}
+36c414f14f0c10df99c6e1d2777fb53b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Test"#) -}
+9897ca6dc8e2f5018c527b2ff9c21a82
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Test.$trModule4) -}
+86b68bf5db6f60bdb36b780cec21b3ed
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+0b8511cb1e98eaf87109b95ef2f1c00a
+  $wprop_neg_shift ::
+    GHC.Types.Int -> GHC.Prim.Char# -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U)><S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (ww :: GHC.Prim.Char#) ->
+                 case Cesar.$wshift
+                        (case w of wild { GHC.Types.I# x ->
+                         GHC.Types.I# (GHC.Prim.negateInt# x) })
+                        ww of ww2 { DEFAULT ->
+                 case Cesar.$wshift w ww2 of ww1 { DEFAULT ->
+                 GHC.Prim.tagToEnum#
+                   @ GHC.Types.Bool
+                   (GHC.Prim.eqChar# ww1 ww) } }) -}
+ce7491d2b86f329e450219f7381dcd68
+  prop_enc_length ::
+    GHC.Types.Int -> GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U)><S,U>,
+     Unfolding: (\ (n :: GHC.Types.Int) (xs :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        (Cesar.encode n xs)
+                        0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char xs 0# of ww1 { DEFAULT ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# ww2 ww1) } }) -}
+5af6fe197039cc97bfb93788bd0d15e8
+  prop_neg_shift :: GHC.Types.Int -> GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U)><S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Char) ->
+                 case w1 of ww { GHC.Types.C# ww1 ->
+                 Test.$wprop_neg_shift w ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

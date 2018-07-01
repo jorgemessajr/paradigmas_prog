@@ -1,0 +1,657 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-01 19:25:00.1285782 UTC
+
+interface main:Cesar 8022
+  interface hash: 4c44b3fc5f960efc56c2f017e765e2a6
+  ABI hash: 4a3f769dfe66034cb8df839ed66ad118
+  export-list hash: 013dd32312f8004ab411bcca7b629d71
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6479d275bf4fea4bc461aae0c799f9e2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Cesar.chisqr
+  Cesar.count
+  Cesar.crack
+  Cesar.encode
+  Cesar.freqs
+  Cesar.int2let
+  Cesar.let2int
+  Cesar.lowers
+  Cesar.percent
+  Cesar.positions
+  Cesar.rotate
+  Cesar.shift
+  Cesar.table
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.Char 9dba16913a6ef0862b65389e7f361a31
+import  -/  base-4.10.1.0:Data.Foldable 4349255461f1285ad885cd2301205c36
+import  -/  base-4.10.1.0:Data.List e5312e282ad78d8152090e079f862b53
+import  -/  base-4.10.1.0:Data.OldList fdea655c7bec488a3994df222c677ab7
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:GHC.Char 99d52128693da16415f8f4d85b57539e
+import  -/  base-4.10.1.0:GHC.List 1bb0adf79553530dc898796596e53188
+import  -/  base-4.10.1.0:GHC.Num bee60808f8127e4cda82dd422aa1c6c0
+import  -/  base-4.10.1.0:GHC.Real 183566a07f0c201dd54a6bc28c33ed14
+import  -/  base-4.10.1.0:GHC.Unicode 7cf9b8b35309e220f8e4073dcd6dbd74
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+599bf521fce0cabdcbbffd3da4b574ef
+  $sminimum1 :: GHC.Types.Float
+  {- Strictness: x -}
+7cd1e4272b65cc7e6f8e952be39b72b7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Cesar.$trModule3 Cesar.$trModule1) -}
+ae499fad299312fea2f4c1e4afa4b637
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Cesar.$trModule2) -}
+e2320144d88fe165e94f3b6a099d9217
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cesar"#) -}
+249254216bbdc5e129931215d44bc007
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Cesar.$trModule4) -}
+a18096de272410f4d233a901a5c9e453
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+2f559bc558987110e0f0233277840cba
+  $wgo1 :: [GHC.Types.Float] -> GHC.Prim.Float# -> GHC.Types.Float
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>m,
+     Inline: [0] -}
+e5e2f0ebecdc7315c5f120e985cfa15a
+  $wgo2 ::
+    [GHC.Types.Float]
+    -> [GHC.Types.Float] -> GHC.Prim.Float# -> GHC.Types.Float
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><S,U>m,
+     Inline: [0] -}
+4f4855f95553deca870eee05a80b51c4
+  $wrotate :: GHC.Prim.Int# -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a (ww :: GHC.Prim.Int#) (w :: [a]) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 0#) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++
+                        @ a
+                        (Cesar.$wunsafeDrop @ a ww w)
+                        (case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<# 0# ww) of wild1 {
+                           GHC.Types.False -> GHC.Types.[] @ a
+                           GHC.Types.True -> GHC.List.$wunsafeTake @ a ww w })
+                   GHC.Types.True
+                   -> GHC.Base.++
+                        @ a
+                        w
+                        (case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<# 0# ww) of wild1 {
+                           GHC.Types.False -> GHC.Types.[] @ a
+                           GHC.Types.True -> GHC.List.$wunsafeTake @ a ww w }) }) -}
+4da2f055df94bd4371d81f3e2298610b
+  $wshift :: GHC.Types.Int -> GHC.Prim.Char# -> GHC.Prim.Char#
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (ww :: GHC.Prim.Char#) ->
+                 case {__pkg_ccall base-4.10.1.0 GHC.Prim.Int#
+                                                 -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                 -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                       GHC.Prim.Int# #)}
+                        (GHC.Prim.ord# ww)
+                        GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                 case ds1 of wild2 {
+                   DEFAULT
+                   -> case w of wild4 { GHC.Types.I# y ->
+                      case GHC.Classes.modInt#
+                             (GHC.Prim.+# (GHC.Prim.-# (GHC.Prim.ord# ww) 97#) y)
+                             26# of ww2 { DEFAULT ->
+                      let {
+                        i# :: GHC.Prim.Int# = GHC.Prim.+# 97# ww2
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild5 {
+                        GHC.Types.False
+                        -> case GHC.Char.$wlvl i# ret_ty GHC.Prim.Char# of {}
+                        GHC.Types.True -> GHC.Prim.chr# i# } } }
+                   0# -> ww } }) -}
+bbfce924030631c61ced038418451b6e
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+f4f52e19ab70e6d1a1c1d9a8f255461d
+  chisqr :: [GHC.Types.Float] -> [GHC.Types.Float] -> GHC.Types.Float
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: [GHC.Types.Float]) (w1 :: [GHC.Types.Float]) ->
+                 letrec {
+                   $wgo4 :: [GHC.Types.Float]
+                            -> [GHC.Types.Float] -> GHC.Prim.Float# -> GHC.Types.Float
+                     <join 3> {- Arity: 3, Strictness: <S,1*U><L,1*U><L,U>m,
+                                 Inline: [0] -}
+                   = \ (w2 :: [GHC.Types.Float])
+                       (w3 :: [GHC.Types.Float])
+                       (ww :: GHC.Prim.Float#) ->
+                     case w2 of wild {
+                       [] -> GHC.Types.F# ww
+                       : ipv ipv1
+                       -> case w3 of wild1 {
+                            [] -> GHC.Types.F# ww
+                            : ipv2 ipv3
+                            -> case ipv of wild2 { GHC.Types.F# x ->
+                               case ipv2 of wild3 { GHC.Types.F# y ->
+                               let {
+                                 x1 :: GHC.Prim.Float# = GHC.Prim.minusFloat# x y
+                               } in
+                               case GHC.Prim.divideFloat#
+                                      (GHC.Prim.timesFloat# x1 x1)
+                                      y of wild4 { DEFAULT ->
+                               $wgo4 ipv1 ipv3 (GHC.Prim.plusFloat# ww wild4) } } } } }
+                 } in
+                 $wgo4 w w1 0.0#) -}
+445a24d36a28e3c38176d64002c887e8
+  count :: GHC.Types.Char -> GHC.Base.String -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Char) (w1 :: GHC.Base.String) ->
+                 letrec {
+                   $wgo4 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Types.Int
+                     <join 2> {- Arity: 2, Strictness: <S,1*U><L,U>m, Inline: [0] -}
+                   = \ (w2 :: [GHC.Types.Char]) (ww :: GHC.Prim.Int#) ->
+                     case w2 of wild {
+                       [] -> GHC.Types.I# ww
+                       : y ys
+                       -> case w of wild1 { GHC.Types.C# x ->
+                          case y of wild2 { GHC.Types.C# y1 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.eqChar# x y1) of wild3 {
+                            GHC.Types.False -> $wgo4 ys ww
+                            GHC.Types.True -> $wgo4 ys (GHC.Prim.+# ww 1#) } } } }
+                 } in
+                 $wgo4 w1 0#) -}
+67c75f618b744bbaa5fa041a82590a4d
+  crack :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 let {
+                   n :: GHC.Types.Int
+                   = let {
+                       table' :: [GHC.Types.Float] = Cesar.freqs xs
+                     } in
+                     letrec {
+                       go :: GHC.Prim.Int# -> [GHC.Types.Float]
+                         {- Arity: 1, Strictness: <L,U> -}
+                       = \ (x :: GHC.Prim.Int#) ->
+                         GHC.Types.:
+                           @ GHC.Types.Float
+                           (Cesar.$wgo2
+                              (Cesar.$wrotate @ GHC.Types.Float x table')
+                              Cesar.table
+                              0.0#)
+                           (case x of wild {
+                              DEFAULT -> go (GHC.Prim.+# wild 1#)
+                              25# -> GHC.Types.[] @ GHC.Types.Float })
+                     } in
+                     let {
+                       chitab :: [GHC.Types.Float] = go 0#
+                     } in
+                     case Cesar.crack_$spositions
+                            (case chitab of wild {
+                               [] -> Cesar.$sminimum1
+                               : ipv ipv1
+                               -> case ipv of ww { GHC.Types.F# ww1 -> Cesar.$wgo1 ipv1 ww1 } })
+                            chitab of wild {
+                       [] -> case GHC.List.badHead ret_ty GHC.Types.Int of {}
+                       : x ds1
+                       -> case x of wild1 { GHC.Types.I# x1 ->
+                          GHC.Types.I# (GHC.Prim.negateInt# x1) } }
+                 } in
+                 letrec {
+                   go :: [GHC.Types.Char] -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Char]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Char
+                       : y ys -> GHC.Types.: @ GHC.Types.Char (Cesar.shift n y) (go ys) }
+                 } in
+                 go xs) -}
+023898a7fb799cb0d7b25b21e7231e3d
+  crack_$spositions ::
+    GHC.Types.Float -> [GHC.Types.Float] -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>,
+     Unfolding: (\ (k :: GHC.Types.Float) (xs :: [GHC.Types.Float]) ->
+                 letrec {
+                   go :: [GHC.Types.Float] -> GHC.Prim.Int# -> [GHC.Types.Int]
+                     {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                   = \ (ds :: [GHC.Types.Float]) (eta :: GHC.Prim.Int#) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Int
+                       : y ys
+                       -> case k of wild1 { GHC.Types.F# x ->
+                          case y of wild2 { GHC.Types.F# y1 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.eqFloat# x y1) of wild3 {
+                            GHC.Types.False -> go ys (GHC.Prim.+# eta 1#)
+                            GHC.Types.True
+                            -> GHC.Types.:
+                                 @ GHC.Types.Int
+                                 (GHC.Types.I# eta)
+                                 (go ys (GHC.Prim.+# eta 1#)) } } } }
+                 } in
+                 go xs 0#) -}
+68c9e6414064b3bfedd49640c7381df1
+  encode :: GHC.Types.Int -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>,
+     Unfolding: (\ (n :: GHC.Types.Int) (xs :: GHC.Base.String) ->
+                 letrec {
+                   go :: [GHC.Types.Char] -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Char]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Char
+                       : y ys -> GHC.Types.: @ GHC.Types.Char (Cesar.shift n y) (go ys) }
+                 } in
+                 go xs) -}
+af3edf397f18b49527d472afcda7207a
+  freqs :: GHC.Base.String -> [GHC.Types.Float]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 let {
+                   n :: GHC.Types.Int = Cesar.freqs_go xs Cesar.freqs1
+                 } in
+                 letrec {
+                   go :: GHC.Prim.Int# -> [GHC.Types.Float]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x :: GHC.Prim.Int#) ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.># x 122#) of wild {
+                       GHC.Types.False
+                       -> GHC.Types.:
+                            @ GHC.Types.Float
+                            (let {
+                               k :: GHC.Prim.Char# = GHC.Prim.chr# x
+                             } in
+                             letrec {
+                               $wgo4 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Types.Float
+                                 <join 2> {- Arity: 2, Strictness: <S,1*U><S,U>m, Inline: [0] -}
+                               = \ (w :: [GHC.Types.Char]) (ww :: GHC.Prim.Int#) ->
+                                 case w of wild1 {
+                                   []
+                                   -> case n of wild2 { GHC.Types.I# i ->
+                                      case GHC.Prim.divideFloat#
+                                             (GHC.Prim.int2Float# ww)
+                                             (GHC.Prim.int2Float# i) of wild4 { DEFAULT ->
+                                      GHC.Types.F# (GHC.Prim.timesFloat# wild4 100.0#) } }
+                                   : y ys
+                                   -> case y of wild2 { GHC.Types.C# y1 ->
+                                      case GHC.Prim.tagToEnum#
+                                             @ GHC.Types.Bool
+                                             (GHC.Prim.eqChar# k y1) of wild3 {
+                                        GHC.Types.False -> $wgo4 ys ww
+                                        GHC.Types.True -> $wgo4 ys (GHC.Prim.+# ww 1#) } } }
+                             } in
+                             $wgo4 xs 0#)
+                            (go (GHC.Prim.+# x 1#))
+                       GHC.Types.True -> GHC.Types.[] @ GHC.Types.Float }
+                 } in
+                 go 97#) -}
+643f9971e0c43584e51cd0220bee96c5
+  freqs1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+f01c8b230ac555e7da40ea8853a2a5e7
+  freqs_go :: [GHC.Types.Char] -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U)> -}
+2ee6c20db5f8602c7f0cf12f8f8d5fed
+  int2let :: GHC.Types.Int -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 case n of wild1 { GHC.Types.I# y ->
+                 let {
+                   i# :: GHC.Prim.Int# = GHC.Prim.+# 97# y
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild2 {
+                   GHC.Types.False -> GHC.Char.$wlvl i#
+                   GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# i#) } }) -}
+ea485dba0d4dfe96b7ba2be7a00b3cc2
+  let2int :: GHC.Types.Char -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (c :: GHC.Types.Char) ->
+                 case c of wild { GHC.Types.C# c# ->
+                 GHC.Types.I# (GHC.Prim.-# (GHC.Prim.ord# c#) 97#) }) -}
+82197dbe5638e0ae933d2d5822335221
+  lowers :: GHC.Base.String -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 Cesar.freqs_go xs Cesar.freqs1) -}
+88d0c41892863a51bee45560226bfdbc
+  percent :: GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Float
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: GHC.Types.Int) (m :: GHC.Types.Int) ->
+                 case n of wild { GHC.Types.I# i ->
+                 case m of wild1 { GHC.Types.I# i1 ->
+                 case GHC.Prim.divideFloat#
+                        (GHC.Prim.int2Float# i)
+                        (GHC.Prim.int2Float# i1) of wild4 { DEFAULT ->
+                 GHC.Types.F# (GHC.Prim.timesFloat# wild4 100.0#) } } }) -}
+46ed215b0266dfdaa418ca693f6d9143
+  positions :: GHC.Classes.Eq a => a -> [a] -> [GHC.Types.Int]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C(U)),A)><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (k :: a)
+                   (xs :: [a]) ->
+                 let {
+                   p :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq k
+                 } in
+                 letrec {
+                   go :: [a] -> GHC.Prim.Int# -> [GHC.Types.Int]
+                     {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                   = \ (ds :: [a]) (eta :: GHC.Prim.Int#) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Int
+                       : y ys
+                       -> case p y of wild1 {
+                            GHC.Types.False -> go ys (GHC.Prim.+# eta 1#)
+                            GHC.Types.True
+                            -> GHC.Types.:
+                                 @ GHC.Types.Int
+                                 (GHC.Types.I# eta)
+                                 (go ys (GHC.Prim.+# eta 1#)) } }
+                 } in
+                 go xs 0#) -}
+12388f3006955301cfb72e8cb042fc2e
+  rotate :: GHC.Types.Int -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Types.Int) (w1 :: [a]) ->
+                 case w of ww { GHC.Types.I# ww1 -> Cesar.$wrotate @ a ww1 w1 }) -}
+a9377e2c162d641313e9a4372d181a22
+  shift :: GHC.Types.Int -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, Strictness: <L,1*U(U)><S(S),1*U(U)>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Char) ->
+                 case w1 of ww { GHC.Types.C# ww1 ->
+                 case Cesar.$wshift w ww1 of ww2 { DEFAULT ->
+                 GHC.Types.C# ww2 } }) -}
+062e34b848de0513697056da5220e691
+  table :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table46
+                   Cesar.table1) -}
+4f941356622b790ba78652ec3d8ea75f
+  table1 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table45
+                   Cesar.table2) -}
+3536d01b79e994da33479f091466f8c0
+  table10 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table39
+                   Cesar.table11) -}
+ea55026724a97105a0b1784d2aec864e
+  table11 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table38
+                   Cesar.table12) -}
+f85fe3ac02e26c1d02c17f9d0b296f05
+  table12 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table29
+                   Cesar.table13) -}
+c522832d8adb4d3309bc5b948a71318f
+  table13 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table37
+                   Cesar.table14) -}
+06c8506846c89a8136fe632bf3d46c7d
+  table14 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table36
+                   Cesar.table15) -}
+167d5f855f058849c14dfa6479e1a24b
+  table15 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table35
+                   Cesar.table16) -}
+3d4ceeaa9ff74f30b25c8813a27f9593
+  table16 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table26
+                   Cesar.table17) -}
+f94073405d5eae6f1f69b68d24c174f4
+  table17 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table34
+                   Cesar.table18) -}
+012b38b7780d7013240a4f4ecdaae551
+  table18 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table33
+                   Cesar.table19) -}
+bbdbf8a1c5c9995a36b0c4083a8a1c02
+  table19 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table32
+                   Cesar.table20) -}
+ebd118c0f9cafc72bc293469600bb8a5
+  table2 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table31
+                   Cesar.table3) -}
+f5154e4bdf741f2727c7a5a02f2bf4cc
+  table20 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table31
+                   Cesar.table21) -}
+88f7076d37cd1d1df044cf33d2e693ea
+  table21 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table30
+                   Cesar.table22) -}
+13052a447cec6aec3be5d29d1881443f
+  table22 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table29
+                   Cesar.table23) -}
+1e41afb381dc54f17a99a87913439cd8
+  table23 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table28
+                   Cesar.table24) -}
+e19fd8c882fdd93401e54e1b79b15a69
+  table24 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table27
+                   Cesar.table25) -}
+b30023ebb8926d90b0075c8d658f148b
+  table25 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table26
+                   (GHC.Types.[] @ GHC.Types.Float)) -}
+bf34357c972e11079974861e0b4c4a24
+  table26 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 0.1#) -}
+5db0b4bf4f97c85e2ea7082b3803e412
+  table27 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 2.0#) -}
+1355b376a875cf93622701b4718cc340
+  table28 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 0.2#) -}
+e0b8942d2a30144d3bc9fb89af770846
+  table29 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 2.4#) -}
+fd6d4a7163009b7f699111bd1f650333
+  table3 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table44
+                   Cesar.table4) -}
+1c9890a9319f5e455e35c637bdcaeb99
+  table30 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 1.0#) -}
+33672847b8d13f9f8c7d0b5ca6cd434c
+  table31 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 2.8#) -}
+cf2cfb16181519bf651ea156293b616d
+  table32 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 9.0#) -}
+32261b456373d5d0515aea2946305612
+  table33 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 6.3#) -}
+8891fe57252e79257d0e0bbc13c62251
+  table34 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 6.0#) -}
+2b36dd72ab9a22b4728481341ca7ba06
+  table35 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 1.9#) -}
+b52d1ca77cfe260866c2191433263c58
+  table36 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 7.5#) -}
+6a27cd7b3edf22faf0e144a4610b25ac
+  table37 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 6.7#) -}
+7a68c52cadd7a6e8e6d4efe6759eba63
+  table38 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 4.0#) -}
+7eb9f40d20973e811af89a805bf347ee
+  table39 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 0.8#) -}
+65293d59a17827b260210cf1547e107b
+  table4 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table43
+                   Cesar.table5) -}
+3b0c4eef65c0819a0f0460781c402dc5
+  table40 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 7.0#) -}
+d2e2173285f0650f93aa5a8b7d60c907
+  table41 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 6.1#) -}
+04d9982a61d20cc88ff7c83837ca9d8e
+  table42 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 2.2#) -}
+b0b0dc0008a39cd63a08095c6c2158d1
+  table43 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 12.7#) -}
+437e280b596cec311e3b3fd49b505657
+  table44 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 4.2#) -}
+e83fda7a3c2988d5a92724fd517baf17
+  table45 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 1.5#) -}
+7ef1015ca152f612a4b2472ec7c09539
+  table46 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 8.1#) -}
+87ceb7a4d025af93a6831ed323c851f5
+  table5 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table42
+                   Cesar.table6) -}
+5a202d36eb727f67a8cdf175d6ee116c
+  table6 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table27
+                   Cesar.table7) -}
+f0a69aa72118bf4591d87d0485cc8980
+  table7 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table41
+                   Cesar.table8) -}
+2bc7a5208eddd0207ca4839a01be6fb2
+  table8 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table40
+                   Cesar.table9) -}
+edefa029ff2ca03a60700a86fd1ba046
+  table9 :: [GHC.Types.Float]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Float
+                   Cesar.table28
+                   Cesar.table10) -}
+"SPEC positions @ Float" forall ($dEq :: GHC.Classes.Eq
+                                           GHC.Types.Float)
+  Cesar.positions @ GHC.Types.Float $dEq = Cesar.crack_$spositions
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
