@@ -1,8 +1,6 @@
 {-
 Código-fonte para resolver o quebra-cabeça lógico:
-http://logicgridpuzzles.com/puzzles/show_logic.php?ID=55
-
-Crie um novo código para resolver o seu quebra-cabeça.
+http://logicgridpuzzles.com/puzzles/show_logic.php?ID=85
 -}
 import Data.List (permutations, intersperse)
 
