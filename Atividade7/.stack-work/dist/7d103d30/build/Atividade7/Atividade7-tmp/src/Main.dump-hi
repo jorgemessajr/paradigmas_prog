@@ -1,0 +1,2497 @@
+
+==================== FINAL INTERFACE ====================
+2018-08-06 06:02:10.0339097 UTC
+
+interface main:Main 8043
+  interface hash: fb22ac3e05153464cb6b76013a11dd07
+  ABI hash: 7b8b1a45376e6820e5fac508e28d8564
+  export-list hash: 83965fda9abd072e319a535cc87bf906
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ebf139510840839574121776b60c3e8a
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.aEsquerdaDe
+  Main.aoLadoDe
+  Main.casaMeio
+  Main.main
+  Main.mesmaCasa
+  Main.perms
+  Main.primeiraCasa
+  Main.solucoes
+  Main.Bebida{Main.Agua Main.Cafe Main.Cerveja Main.Cha Main.Leite}
+  Main.Cigarro{Main.Blend Main.BlueMaster Main.Dunhill Main.PallMall Main.Prince}
+  Main.Cor{Main.Amarela Main.Azul Main.Branca Main.Verde Main.Vermelha}
+  Main.Nacao{Main.Alemanha Main.Dinamarca Main.Inglaterra Main.Noruega Main.Suecia}
+  Main.Pet{Main.Cachorro Main.Cavalo Main.Gato Main.Passaro Main.Zebra}
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Control.Applicative 7fa66cb1a6267582246bf60408ed5690
+import  -/  base-4.11.1.0:Control.Monad 60c7bc648329161549cea9b9658c9b81
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Enum e4ba78b4713760aa26fb70e6c50823d5
+import  -/  base-4.11.1.0:GHC.Err 97cd376c529926d7dcbd3f06020fe0fc
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  base-4.11.1.0:System.IO 7331ec6891ba7763ad75720258619382
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+30fc2874014b24d30ad359628ac3cb26
+  $fBoundedBebida :: GHC.Enum.Bounded Main.Bebida
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Bebida Main.Cha Main.Agua -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fBoundedCigarro :: GHC.Enum.Bounded Main.Cigarro
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Cigarro Main.PallMall Main.BlueMaster -}
+0293980fa42f94664f2789c45f98c625
+  $fBoundedCor :: GHC.Enum.Bounded Main.Cor
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Cor Main.Vermelha Main.Azul -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fBoundedNacao :: GHC.Enum.Bounded Main.Nacao
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Nacao Main.Inglaterra Main.Noruega -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fBoundedPet :: GHC.Enum.Bounded Main.Pet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Pet Main.Cachorro Main.Zebra -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida :: GHC.Enum.Enum Main.Bebida
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Bebida
+                  Main.$fEnumBebida_$csucc
+                  Main.$fEnumBebida_$cpred
+                  Main.$fEnumBebida_$ctoEnum
+                  Main.$fEnumBebida_$cfromEnum
+                  Main.$fEnumBebida_$cenumFrom
+                  Main.$fEnumBebida_$cenumFromThen
+                  Main.$fEnumBebida_$cenumFromTo
+                  Main.$fEnumBebida_$cenumFromThenTo -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida1 :: [Main.Bebida]
+  {- Unfolding: (Main.$fEnumBebida_go5 4#) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida2 :: [Main.Bebida]
+  {- Unfolding: (Main.$fEnumBebida_go5 3#) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida3 :: [Main.Bebida]
+  {- Unfolding: (Main.$fEnumBebida_go5 2#) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida4 :: [Main.Bebida]
+  {- Unfolding: (Main.$fEnumBebida_go5 1#) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida5 :: [Main.Bebida]
+  {- Unfolding: (Main.$fEnumBebida_go5 0#) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida6 :: Main.Bebida
+  {- Strictness: x -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida7 :: Main.Bebida
+  {- Strictness: x -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$cenumFrom :: Main.Bebida -> [Main.Bebida]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Main.Bebida) ->
+                 case a of wild {
+                   Main.Cha -> Main.$fEnumBebida5
+                   Main.Cafe -> Main.$fEnumBebida4
+                   Main.Leite -> Main.$fEnumBebida3
+                   Main.Cerveja -> Main.$fEnumBebida2
+                   Main.Agua -> Main.$fEnumBebida1 }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$cenumFromThen ::
+    Main.Bebida -> Main.Bebida -> [Main.Bebida]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$cenumFromThenTo ::
+    Main.Bebida -> Main.Bebida -> Main.Bebida -> [Main.Bebida]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$cenumFromTo ::
+    Main.Bebida -> Main.Bebida -> [Main.Bebida]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Bebida) (y :: Main.Bebida) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Main.Bebida]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Main.Cha
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Main.$fEnumBebida_go4 x1
+                            1# -> GHC.Types.[] @ Main.Bebida }
+                       Main.Cafe
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Main.$fEnumBebida_go3 x1
+                            1# -> GHC.Types.[] @ Main.Bebida }
+                       Main.Leite
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Main.$fEnumBebida_go2 x1
+                            1# -> GHC.Types.[] @ Main.Bebida }
+                       Main.Cerveja
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Main.$fEnumBebida_go1 x1
+                            1# -> GHC.Types.[] @ Main.Bebida }
+                       Main.Agua
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Main.$fEnumBebida_go x1
+                            1# -> GHC.Types.[] @ Main.Bebida } }
+                 } in
+                 case x of wild {
+                   Main.Cha -> $j 0#
+                   Main.Cafe -> $j 1#
+                   Main.Leite -> $j 2#
+                   Main.Cerveja -> $j 3#
+                   Main.Agua -> $j 4# }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$cfromEnum :: Main.Bebida -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.Bebida) ->
+                 case w of wild {
+                   Main.Cha -> GHC.Types.I# 0#
+                   Main.Cafe -> GHC.Types.I# 1#
+                   Main.Leite -> GHC.Types.I# 2#
+                   Main.Cerveja -> GHC.Types.I# 3#
+                   Main.Agua -> GHC.Types.I# 4# }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$cpred :: Main.Bebida -> Main.Bebida
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Bebida) ->
+                 case a of wild {
+                   Main.Cha -> Main.$fEnumBebida6
+                   Main.Cafe -> Main.Cha
+                   Main.Leite -> Main.Cafe
+                   Main.Cerveja -> Main.Leite
+                   Main.Agua -> Main.Cerveja }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$csucc :: Main.Bebida -> Main.Bebida
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Bebida) ->
+                 case a of wild {
+                   Main.Cha -> Main.Cafe
+                   Main.Cafe -> Main.Leite
+                   Main.Leite -> Main.Cerveja
+                   Main.Cerveja -> Main.Agua
+                   Main.Agua -> Main.$fEnumBebida7 }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_$ctoEnum :: GHC.Types.Int -> Main.Bebida
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$w$ctoEnum ww1 }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_go :: GHC.Prim.Int# -> [Main.Bebida]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_go1 :: GHC.Prim.Int# -> [Main.Bebida]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_go2 :: GHC.Prim.Int# -> [Main.Bebida]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_go3 :: GHC.Prim.Int# -> [Main.Bebida]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_go4 :: GHC.Prim.Int# -> [Main.Bebida]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEnumBebida_go5 :: GHC.Prim.Int# -> [Main.Bebida]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro :: GHC.Enum.Enum Main.Cigarro
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Cigarro
+                  Main.$fEnumCigarro_$csucc
+                  Main.$fEnumCigarro_$cpred
+                  Main.$fEnumCigarro_$ctoEnum
+                  Main.$fEnumCigarro_$cfromEnum
+                  Main.$fEnumCigarro_$cenumFrom
+                  Main.$fEnumCigarro_$cenumFromThen
+                  Main.$fEnumCigarro_$cenumFromTo
+                  Main.$fEnumCigarro_$cenumFromThenTo -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro1 :: [Main.Cigarro]
+  {- Unfolding: (Main.$fEnumCigarro_go5 4#) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro2 :: [Main.Cigarro]
+  {- Unfolding: (Main.$fEnumCigarro_go5 3#) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro3 :: [Main.Cigarro]
+  {- Unfolding: (Main.$fEnumCigarro_go5 2#) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro4 :: [Main.Cigarro]
+  {- Unfolding: (Main.$fEnumCigarro_go5 1#) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro5 :: [Main.Cigarro]
+  {- Unfolding: (Main.$fEnumCigarro_go5 0#) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro6 :: Main.Cigarro
+  {- Strictness: x -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro7 :: Main.Cigarro
+  {- Strictness: x -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$cenumFrom :: Main.Cigarro -> [Main.Cigarro]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Main.Cigarro) ->
+                 case a of wild {
+                   Main.PallMall -> Main.$fEnumCigarro5
+                   Main.Dunhill -> Main.$fEnumCigarro4
+                   Main.Blend -> Main.$fEnumCigarro3
+                   Main.Prince -> Main.$fEnumCigarro2
+                   Main.BlueMaster -> Main.$fEnumCigarro1 }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$cenumFromThen ::
+    Main.Cigarro -> Main.Cigarro -> [Main.Cigarro]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$cenumFromThenTo ::
+    Main.Cigarro -> Main.Cigarro -> Main.Cigarro -> [Main.Cigarro]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$cenumFromTo ::
+    Main.Cigarro -> Main.Cigarro -> [Main.Cigarro]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Cigarro) (y :: Main.Cigarro) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Main.Cigarro]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Main.PallMall
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Main.$fEnumCigarro_go4 x1
+                            1# -> GHC.Types.[] @ Main.Cigarro }
+                       Main.Dunhill
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Main.$fEnumCigarro_go3 x1
+                            1# -> GHC.Types.[] @ Main.Cigarro }
+                       Main.Blend
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Main.$fEnumCigarro_go2 x1
+                            1# -> GHC.Types.[] @ Main.Cigarro }
+                       Main.Prince
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Main.$fEnumCigarro_go1 x1
+                            1# -> GHC.Types.[] @ Main.Cigarro }
+                       Main.BlueMaster
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Main.$fEnumCigarro_go x1
+                            1# -> GHC.Types.[] @ Main.Cigarro } }
+                 } in
+                 case x of wild {
+                   Main.PallMall -> $j 0#
+                   Main.Dunhill -> $j 1#
+                   Main.Blend -> $j 2#
+                   Main.Prince -> $j 3#
+                   Main.BlueMaster -> $j 4# }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$cfromEnum :: Main.Cigarro -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.Cigarro) ->
+                 case w of wild {
+                   Main.PallMall -> GHC.Types.I# 0#
+                   Main.Dunhill -> GHC.Types.I# 1#
+                   Main.Blend -> GHC.Types.I# 2#
+                   Main.Prince -> GHC.Types.I# 3#
+                   Main.BlueMaster -> GHC.Types.I# 4# }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$cpred :: Main.Cigarro -> Main.Cigarro
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Cigarro) ->
+                 case a of wild {
+                   Main.PallMall -> Main.$fEnumCigarro6
+                   Main.Dunhill -> Main.PallMall
+                   Main.Blend -> Main.Dunhill
+                   Main.Prince -> Main.Blend
+                   Main.BlueMaster -> Main.Prince }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$csucc :: Main.Cigarro -> Main.Cigarro
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Cigarro) ->
+                 case a of wild {
+                   Main.PallMall -> Main.Dunhill
+                   Main.Dunhill -> Main.Blend
+                   Main.Blend -> Main.Prince
+                   Main.Prince -> Main.BlueMaster
+                   Main.BlueMaster -> Main.$fEnumCigarro7 }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_$ctoEnum :: GHC.Types.Int -> Main.Cigarro
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$w$ctoEnum1 ww1 }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_go :: GHC.Prim.Int# -> [Main.Cigarro]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_go1 :: GHC.Prim.Int# -> [Main.Cigarro]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_go2 :: GHC.Prim.Int# -> [Main.Cigarro]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_go3 :: GHC.Prim.Int# -> [Main.Cigarro]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_go4 :: GHC.Prim.Int# -> [Main.Cigarro]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEnumCigarro_go5 :: GHC.Prim.Int# -> [Main.Cigarro]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor :: GHC.Enum.Enum Main.Cor
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Cor
+                  Main.$fEnumCor_$csucc
+                  Main.$fEnumCor_$cpred
+                  Main.$fEnumCor_$ctoEnum
+                  Main.$fEnumCor_$cfromEnum
+                  Main.$fEnumCor_$cenumFrom
+                  Main.$fEnumCor_$cenumFromThen
+                  Main.$fEnumCor_$cenumFromTo
+                  Main.$fEnumCor_$cenumFromThenTo -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor1 :: [Main.Cor]
+  {- Unfolding: (Main.$fEnumCor_go5 4#) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor2 :: [Main.Cor]
+  {- Unfolding: (Main.$fEnumCor_go5 3#) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor3 :: [Main.Cor]
+  {- Unfolding: (Main.$fEnumCor_go5 2#) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor4 :: [Main.Cor]
+  {- Unfolding: (Main.$fEnumCor_go5 1#) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor5 :: [Main.Cor]
+  {- Unfolding: (Main.$fEnumCor_go5 0#) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor6 :: Main.Cor
+  {- Strictness: x -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor7 :: Main.Cor
+  {- Strictness: x -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$cenumFrom :: Main.Cor -> [Main.Cor]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Main.Cor) ->
+                 case a of wild {
+                   Main.Vermelha -> Main.$fEnumCor5
+                   Main.Verde -> Main.$fEnumCor4
+                   Main.Branca -> Main.$fEnumCor3
+                   Main.Amarela -> Main.$fEnumCor2
+                   Main.Azul -> Main.$fEnumCor1 }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$cenumFromThen :: Main.Cor -> Main.Cor -> [Main.Cor]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$cenumFromThenTo ::
+    Main.Cor -> Main.Cor -> Main.Cor -> [Main.Cor]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$cenumFromTo :: Main.Cor -> Main.Cor -> [Main.Cor]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Cor) (y :: Main.Cor) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Main.Cor]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Main.Vermelha
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Main.$fEnumCor_go4 x1 1# -> GHC.Types.[] @ Main.Cor }
+                       Main.Verde
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Main.$fEnumCor_go3 x1 1# -> GHC.Types.[] @ Main.Cor }
+                       Main.Branca
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Main.$fEnumCor_go2 x1 1# -> GHC.Types.[] @ Main.Cor }
+                       Main.Amarela
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Main.$fEnumCor_go1 x1 1# -> GHC.Types.[] @ Main.Cor }
+                       Main.Azul
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Main.$fEnumCor_go x1 1# -> GHC.Types.[] @ Main.Cor } }
+                 } in
+                 case x of wild {
+                   Main.Vermelha -> $j 0#
+                   Main.Verde -> $j 1#
+                   Main.Branca -> $j 2#
+                   Main.Amarela -> $j 3#
+                   Main.Azul -> $j 4# }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$cfromEnum :: Main.Cor -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.Cor) ->
+                 case w of wild {
+                   Main.Vermelha -> GHC.Types.I# 0#
+                   Main.Verde -> GHC.Types.I# 1#
+                   Main.Branca -> GHC.Types.I# 2#
+                   Main.Amarela -> GHC.Types.I# 3#
+                   Main.Azul -> GHC.Types.I# 4# }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$cpred :: Main.Cor -> Main.Cor
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Cor) ->
+                 case a of wild {
+                   Main.Vermelha -> Main.$fEnumCor6
+                   Main.Verde -> Main.Vermelha
+                   Main.Branca -> Main.Verde
+                   Main.Amarela -> Main.Branca
+                   Main.Azul -> Main.Amarela }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$csucc :: Main.Cor -> Main.Cor
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Cor) ->
+                 case a of wild {
+                   Main.Vermelha -> Main.Verde
+                   Main.Verde -> Main.Branca
+                   Main.Branca -> Main.Amarela
+                   Main.Amarela -> Main.Azul
+                   Main.Azul -> Main.$fEnumCor7 }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_$ctoEnum :: GHC.Types.Int -> Main.Cor
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$w$ctoEnum2 ww1 }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_go :: GHC.Prim.Int# -> [Main.Cor]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_go1 :: GHC.Prim.Int# -> [Main.Cor]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_go2 :: GHC.Prim.Int# -> [Main.Cor]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_go3 :: GHC.Prim.Int# -> [Main.Cor]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_go4 :: GHC.Prim.Int# -> [Main.Cor]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+0293980fa42f94664f2789c45f98c625
+  $fEnumCor_go5 :: GHC.Prim.Int# -> [Main.Cor]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao :: GHC.Enum.Enum Main.Nacao
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Nacao
+                  Main.$fEnumNacao_$csucc
+                  Main.$fEnumNacao_$cpred
+                  Main.$fEnumNacao_$ctoEnum
+                  Main.$fEnumNacao_$cfromEnum
+                  Main.$fEnumNacao_$cenumFrom
+                  Main.$fEnumNacao_$cenumFromThen
+                  Main.$fEnumNacao_$cenumFromTo
+                  Main.$fEnumNacao_$cenumFromThenTo -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao1 :: [Main.Nacao]
+  {- Unfolding: (Main.$fEnumNacao_go5 4#) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao2 :: [Main.Nacao]
+  {- Unfolding: (Main.$fEnumNacao_go5 3#) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao3 :: [Main.Nacao]
+  {- Unfolding: (Main.$fEnumNacao_go5 2#) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao4 :: [Main.Nacao]
+  {- Unfolding: (Main.$fEnumNacao_go5 1#) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao5 :: [Main.Nacao]
+  {- Unfolding: (Main.$fEnumNacao_go5 0#) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao6 :: Main.Nacao
+  {- Strictness: x -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao7 :: Main.Nacao
+  {- Strictness: x -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$cenumFrom :: Main.Nacao -> [Main.Nacao]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Main.Nacao) ->
+                 case a of wild {
+                   Main.Inglaterra -> Main.$fEnumNacao5
+                   Main.Suecia -> Main.$fEnumNacao4
+                   Main.Dinamarca -> Main.$fEnumNacao3
+                   Main.Alemanha -> Main.$fEnumNacao2
+                   Main.Noruega -> Main.$fEnumNacao1 }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$cenumFromThen ::
+    Main.Nacao -> Main.Nacao -> [Main.Nacao]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$cenumFromThenTo ::
+    Main.Nacao -> Main.Nacao -> Main.Nacao -> [Main.Nacao]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$cenumFromTo ::
+    Main.Nacao -> Main.Nacao -> [Main.Nacao]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Nacao) (y :: Main.Nacao) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Main.Nacao]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Main.Inglaterra
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Main.$fEnumNacao_go4 x1
+                            1# -> GHC.Types.[] @ Main.Nacao }
+                       Main.Suecia
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Main.$fEnumNacao_go3 x1
+                            1# -> GHC.Types.[] @ Main.Nacao }
+                       Main.Dinamarca
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Main.$fEnumNacao_go2 x1
+                            1# -> GHC.Types.[] @ Main.Nacao }
+                       Main.Alemanha
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Main.$fEnumNacao_go1 x1
+                            1# -> GHC.Types.[] @ Main.Nacao }
+                       Main.Noruega
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Main.$fEnumNacao_go x1
+                            1# -> GHC.Types.[] @ Main.Nacao } }
+                 } in
+                 case x of wild {
+                   Main.Inglaterra -> $j 0#
+                   Main.Suecia -> $j 1#
+                   Main.Dinamarca -> $j 2#
+                   Main.Alemanha -> $j 3#
+                   Main.Noruega -> $j 4# }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$cfromEnum :: Main.Nacao -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.Nacao) ->
+                 case w of wild {
+                   Main.Inglaterra -> GHC.Types.I# 0#
+                   Main.Suecia -> GHC.Types.I# 1#
+                   Main.Dinamarca -> GHC.Types.I# 2#
+                   Main.Alemanha -> GHC.Types.I# 3#
+                   Main.Noruega -> GHC.Types.I# 4# }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$cpred :: Main.Nacao -> Main.Nacao
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Nacao) ->
+                 case a of wild {
+                   Main.Inglaterra -> Main.$fEnumNacao6
+                   Main.Suecia -> Main.Inglaterra
+                   Main.Dinamarca -> Main.Suecia
+                   Main.Alemanha -> Main.Dinamarca
+                   Main.Noruega -> Main.Alemanha }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$csucc :: Main.Nacao -> Main.Nacao
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Nacao) ->
+                 case a of wild {
+                   Main.Inglaterra -> Main.Suecia
+                   Main.Suecia -> Main.Dinamarca
+                   Main.Dinamarca -> Main.Alemanha
+                   Main.Alemanha -> Main.Noruega
+                   Main.Noruega -> Main.$fEnumNacao7 }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_$ctoEnum :: GHC.Types.Int -> Main.Nacao
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$w$ctoEnum3 ww1 }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_go :: GHC.Prim.Int# -> [Main.Nacao]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_go1 :: GHC.Prim.Int# -> [Main.Nacao]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_go2 :: GHC.Prim.Int# -> [Main.Nacao]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_go3 :: GHC.Prim.Int# -> [Main.Nacao]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_go4 :: GHC.Prim.Int# -> [Main.Nacao]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEnumNacao_go5 :: GHC.Prim.Int# -> [Main.Nacao]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet :: GHC.Enum.Enum Main.Pet
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Pet
+                  Main.$fEnumPet_$csucc
+                  Main.$fEnumPet_$cpred
+                  Main.$fEnumPet_$ctoEnum
+                  Main.$fEnumPet_$cfromEnum
+                  Main.$fEnumPet_$cenumFrom
+                  Main.$fEnumPet_$cenumFromThen
+                  Main.$fEnumPet_$cenumFromTo
+                  Main.$fEnumPet_$cenumFromThenTo -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet1 :: [Main.Pet]
+  {- Unfolding: (Main.$fEnumPet_go5 4#) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet2 :: [Main.Pet]
+  {- Unfolding: (Main.$fEnumPet_go5 3#) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet3 :: [Main.Pet]
+  {- Unfolding: (Main.$fEnumPet_go5 2#) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet4 :: [Main.Pet]
+  {- Unfolding: (Main.$fEnumPet_go5 1#) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet5 :: [Main.Pet]
+  {- Unfolding: (Main.$fEnumPet_go5 0#) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet6 :: Main.Pet
+  {- Strictness: x -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet7 :: Main.Pet
+  {- Strictness: x -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$cenumFrom :: Main.Pet -> [Main.Pet]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Main.Pet) ->
+                 case a of wild {
+                   Main.Cachorro -> Main.$fEnumPet5
+                   Main.Passaro -> Main.$fEnumPet4
+                   Main.Gato -> Main.$fEnumPet3
+                   Main.Cavalo -> Main.$fEnumPet2
+                   Main.Zebra -> Main.$fEnumPet1 }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$cenumFromThen :: Main.Pet -> Main.Pet -> [Main.Pet]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$cenumFromThenTo ::
+    Main.Pet -> Main.Pet -> Main.Pet -> [Main.Pet]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$cenumFromTo :: Main.Pet -> Main.Pet -> [Main.Pet]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Pet) (y :: Main.Pet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Main.Pet]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Main.Cachorro
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Main.$fEnumPet_go4 x1 1# -> GHC.Types.[] @ Main.Pet }
+                       Main.Passaro
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Main.$fEnumPet_go3 x1 1# -> GHC.Types.[] @ Main.Pet }
+                       Main.Gato
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Main.$fEnumPet_go2 x1 1# -> GHC.Types.[] @ Main.Pet }
+                       Main.Cavalo
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Main.$fEnumPet_go1 x1 1# -> GHC.Types.[] @ Main.Pet }
+                       Main.Zebra
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Main.$fEnumPet_go x1 1# -> GHC.Types.[] @ Main.Pet } }
+                 } in
+                 case x of wild {
+                   Main.Cachorro -> $j 0#
+                   Main.Passaro -> $j 1#
+                   Main.Gato -> $j 2#
+                   Main.Cavalo -> $j 3#
+                   Main.Zebra -> $j 4# }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$cfromEnum :: Main.Pet -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.Pet) ->
+                 case w of wild {
+                   Main.Cachorro -> GHC.Types.I# 0#
+                   Main.Passaro -> GHC.Types.I# 1#
+                   Main.Gato -> GHC.Types.I# 2#
+                   Main.Cavalo -> GHC.Types.I# 3#
+                   Main.Zebra -> GHC.Types.I# 4# }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$cpred :: Main.Pet -> Main.Pet
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Pet) ->
+                 case a of wild {
+                   Main.Cachorro -> Main.$fEnumPet6
+                   Main.Passaro -> Main.Cachorro
+                   Main.Gato -> Main.Passaro
+                   Main.Cavalo -> Main.Gato
+                   Main.Zebra -> Main.Cavalo }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$csucc :: Main.Pet -> Main.Pet
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Main.Pet) ->
+                 case a of wild {
+                   Main.Cachorro -> Main.Passaro
+                   Main.Passaro -> Main.Gato
+                   Main.Gato -> Main.Cavalo
+                   Main.Cavalo -> Main.Zebra
+                   Main.Zebra -> Main.$fEnumPet7 }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_$ctoEnum :: GHC.Types.Int -> Main.Pet
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$w$ctoEnum4 ww1 }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_go :: GHC.Prim.Int# -> [Main.Pet]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_go1 :: GHC.Prim.Int# -> [Main.Pet]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_go2 :: GHC.Prim.Int# -> [Main.Pet]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_go3 :: GHC.Prim.Int# -> [Main.Pet]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_go4 :: GHC.Prim.Int# -> [Main.Pet]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEnumPet_go5 :: GHC.Prim.Int# -> [Main.Pet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEqBebida :: GHC.Classes.Eq Main.Bebida
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Bebida Main.$fEqBebida_$c== Main.$fEqBebida_$c/= -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEqBebida_$c/= :: Main.Bebida -> Main.Bebida -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Main.Bebida) (y :: Main.Bebida) ->
+                 case x of wild {
+                   Main.Cha
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Cha -> GHC.Types.False }
+                   Main.Cafe
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Cafe -> GHC.Types.False }
+                   Main.Leite
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Leite -> GHC.Types.False }
+                   Main.Cerveja
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Cerveja -> GHC.Types.False }
+                   Main.Agua
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Agua -> GHC.Types.False } }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fEqBebida_$c== :: Main.Bebida -> Main.Bebida -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Main.Bebida) (ds1 :: Main.Bebida) ->
+                 case ds of wild {
+                   Main.Cha
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Cha -> GHC.Types.True }
+                   Main.Cafe
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Cafe -> GHC.Types.True }
+                   Main.Leite
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Leite -> GHC.Types.True }
+                   Main.Cerveja
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Cerveja -> GHC.Types.True }
+                   Main.Agua
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Agua -> GHC.Types.True } }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEqCigarro :: GHC.Classes.Eq Main.Cigarro
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Cigarro Main.$fEqCigarro_$c== Main.$fEqCigarro_$c/= -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEqCigarro_$c/= :: Main.Cigarro -> Main.Cigarro -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Main.Cigarro) (y :: Main.Cigarro) ->
+                 case x of wild {
+                   Main.PallMall
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.PallMall -> GHC.Types.False }
+                   Main.Dunhill
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Dunhill -> GHC.Types.False }
+                   Main.Blend
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Blend -> GHC.Types.False }
+                   Main.Prince
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Prince -> GHC.Types.False }
+                   Main.BlueMaster
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Main.BlueMaster -> GHC.Types.False } }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fEqCigarro_$c== :: Main.Cigarro -> Main.Cigarro -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Main.Cigarro) (ds1 :: Main.Cigarro) ->
+                 case ds of wild {
+                   Main.PallMall
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.PallMall -> GHC.Types.True }
+                   Main.Dunhill
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Dunhill -> GHC.Types.True }
+                   Main.Blend
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Blend -> GHC.Types.True }
+                   Main.Prince
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Prince -> GHC.Types.True }
+                   Main.BlueMaster
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Main.BlueMaster -> GHC.Types.True } }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEqCor :: GHC.Classes.Eq Main.Cor
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Cor Main.$fEqCor_$c== Main.$fEqCor_$c/= -}
+0293980fa42f94664f2789c45f98c625
+  $fEqCor_$c/= :: Main.Cor -> Main.Cor -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Main.Cor) (y :: Main.Cor) ->
+                 case x of wild {
+                   Main.Vermelha
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Vermelha -> GHC.Types.False }
+                   Main.Verde
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Verde -> GHC.Types.False }
+                   Main.Branca
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Branca -> GHC.Types.False }
+                   Main.Amarela
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Amarela -> GHC.Types.False }
+                   Main.Azul
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Azul -> GHC.Types.False } }) -}
+0293980fa42f94664f2789c45f98c625
+  $fEqCor_$c== :: Main.Cor -> Main.Cor -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Main.Cor) (ds1 :: Main.Cor) ->
+                 case ds of wild {
+                   Main.Vermelha
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Vermelha -> GHC.Types.True }
+                   Main.Verde
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Verde -> GHC.Types.True }
+                   Main.Branca
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Branca -> GHC.Types.True }
+                   Main.Amarela
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Amarela -> GHC.Types.True }
+                   Main.Azul
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Azul -> GHC.Types.True } }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEqNacao :: GHC.Classes.Eq Main.Nacao
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Nacao Main.$fEqNacao_$c== Main.$fEqNacao_$c/= -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEqNacao_$c/= :: Main.Nacao -> Main.Nacao -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Main.Nacao) (y :: Main.Nacao) ->
+                 case x of wild {
+                   Main.Inglaterra
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Inglaterra -> GHC.Types.False }
+                   Main.Suecia
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Suecia -> GHC.Types.False }
+                   Main.Dinamarca
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Dinamarca -> GHC.Types.False }
+                   Main.Alemanha
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Alemanha -> GHC.Types.False }
+                   Main.Noruega
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Noruega -> GHC.Types.False } }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fEqNacao_$c== :: Main.Nacao -> Main.Nacao -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Main.Nacao) (ds1 :: Main.Nacao) ->
+                 case ds of wild {
+                   Main.Inglaterra
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Inglaterra -> GHC.Types.True }
+                   Main.Suecia
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Suecia -> GHC.Types.True }
+                   Main.Dinamarca
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Dinamarca -> GHC.Types.True }
+                   Main.Alemanha
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Alemanha -> GHC.Types.True }
+                   Main.Noruega
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Noruega -> GHC.Types.True } }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEqPet :: GHC.Classes.Eq Main.Pet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Main.Pet Main.$fEqPet_$c== Main.$fEqPet_$c/= -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEqPet_$c/= :: Main.Pet -> Main.Pet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Main.Pet) (y :: Main.Pet) ->
+                 case x of wild {
+                   Main.Cachorro
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Cachorro -> GHC.Types.False }
+                   Main.Passaro
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Passaro -> GHC.Types.False }
+                   Main.Gato
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Gato -> GHC.Types.False }
+                   Main.Cavalo
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Cavalo -> GHC.Types.False }
+                   Main.Zebra
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Zebra -> GHC.Types.False } }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fEqPet_$c== :: Main.Pet -> Main.Pet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Main.Pet) (ds1 :: Main.Pet) ->
+                 case ds of wild {
+                   Main.Cachorro
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Cachorro -> GHC.Types.True }
+                   Main.Passaro
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Passaro -> GHC.Types.True }
+                   Main.Gato
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Gato -> GHC.Types.True }
+                   Main.Cavalo
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Cavalo -> GHC.Types.True }
+                   Main.Zebra
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Zebra -> GHC.Types.True } }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fShowBebida :: GHC.Show.Show Main.Bebida
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Bebida
+                  Main.$fShowBebida_$cshowsPrec
+                  Main.$fShowBebida_$cshow
+                  Main.$fShowBebida_$cshowList -}
+4fd0b52804dd45ca1cc654e8bf8fad19
+  $fShowBebida1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowBebida2) -}
+d133ae1af16cdda61ef46ccdc2915ca2
+  $fShowBebida10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cha"#) -}
+199f28eff2cdb71784c933484b3a1db4
+  $fShowBebida2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Agua"#) -}
+526edae7bda21cd04057720c84b66a00
+  $fShowBebida3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowBebida4) -}
+1f623466363eb35a39dd22e75c471fe3
+  $fShowBebida4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cerveja"#) -}
+a6b4fef77ed616b032d89d7c09704daf
+  $fShowBebida5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowBebida6) -}
+01777ce743bd9a7dcba785755b1816e7
+  $fShowBebida6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Leite"#) -}
+2423009b8a54521949b1e27f20425a3f
+  $fShowBebida7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowBebida8) -}
+1f8d4882b6757d6fcf717b54fbf7dc69
+  $fShowBebida8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cafe"#) -}
+aece3acda98130b7d8ac711905d82b51
+  $fShowBebida9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowBebida10) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fShowBebida_$cshow :: Main.Bebida -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Bebida) ->
+                 case x of wild {
+                   Main.Cha -> Main.$fShowBebida9
+                   Main.Cafe -> Main.$fShowBebida7
+                   Main.Leite -> Main.$fShowBebida5
+                   Main.Cerveja -> Main.$fShowBebida3
+                   Main.Agua -> Main.$fShowBebida1 }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fShowBebida_$cshowList :: [Main.Bebida] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Main.Bebida]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Main.Bebida Main.$w$cshowsPrec ls s) -}
+30fc2874014b24d30ad359628ac3cb26
+  $fShowBebida_$cshowsPrec ::
+    GHC.Types.Int -> Main.Bebida -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Main.Bebida)
+                   (w2 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec w1 w2) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fShowCigarro :: GHC.Show.Show Main.Cigarro
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Cigarro
+                  Main.$fShowCigarro_$cshowsPrec
+                  Main.$fShowCigarro_$cshow
+                  Main.$fShowCigarro_$cshowList -}
+05e8ed7b411610e1f4811bd5284bac3e
+  $fShowCigarro1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCigarro2) -}
+eb4bebad6a777611efe852665a911529
+  $fShowCigarro10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PallMall"#) -}
+189125b60f6ac440a9a7319d5b699d7a
+  $fShowCigarro2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BlueMaster"#) -}
+1a445073ab1036de82f5bb9b3068719f
+  $fShowCigarro3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCigarro4) -}
+363e8ca6cfbfe23ddbcacf2d89899481
+  $fShowCigarro4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Prince"#) -}
+e1ce9f4d39ee6d1d83635e825c44b6b3
+  $fShowCigarro5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCigarro6) -}
+91bd67b835616ded90e8271a2d4bc5f9
+  $fShowCigarro6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Blend"#) -}
+891c3623d17c5615ed1af41fe83a39f8
+  $fShowCigarro7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCigarro8) -}
+c42ab02722c24b6632fbcd197ca9eba1
+  $fShowCigarro8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Dunhill"#) -}
+efb3eb37927b097f57ee9efc98618bd1
+  $fShowCigarro9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCigarro10) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fShowCigarro_$cshow :: Main.Cigarro -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Cigarro) ->
+                 case x of wild {
+                   Main.PallMall -> Main.$fShowCigarro9
+                   Main.Dunhill -> Main.$fShowCigarro7
+                   Main.Blend -> Main.$fShowCigarro5
+                   Main.Prince -> Main.$fShowCigarro3
+                   Main.BlueMaster -> Main.$fShowCigarro1 }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fShowCigarro_$cshowList :: [Main.Cigarro] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Main.Cigarro]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Main.Cigarro Main.$w$cshowsPrec1 ls s) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $fShowCigarro_$cshowsPrec ::
+    GHC.Types.Int -> Main.Cigarro -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Main.Cigarro)
+                   (w2 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec1 w1 w2) -}
+0293980fa42f94664f2789c45f98c625
+  $fShowCor :: GHC.Show.Show Main.Cor
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Cor
+                  Main.$fShowCor_$cshowsPrec
+                  Main.$fShowCor_$cshow
+                  Main.$fShowCor_$cshowList -}
+182fd3437b880bd47d5c4b19da0781f2
+  $fShowCor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCor2) -}
+605b8fd15c0042e070a0682cb03976a5
+  $fShowCor10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Vermelha"#) -}
+949aa1e55d2d2294ff33b843dab13097
+  $fShowCor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Azul"#) -}
+826aab106c495c6af5b621078bbd5803
+  $fShowCor3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCor4) -}
+ef1fc671e04291b26a38243a3442704b
+  $fShowCor4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Amarela"#) -}
+6ab2fc7fcd09c419895e8dd9b88ae27e
+  $fShowCor5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCor6) -}
+2893a8e19cf1bb51448ed12f915d1279
+  $fShowCor6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Branca"#) -}
+abfa1fc80496215f1b8e6d0a6a641e94
+  $fShowCor7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCor8) -}
+f702bc311f8fc7e28df91ca8dfa69570
+  $fShowCor8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Verde"#) -}
+4a1fdc8a07ae323edf056d918414eab3
+  $fShowCor9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowCor10) -}
+0293980fa42f94664f2789c45f98c625
+  $fShowCor_$cshow :: Main.Cor -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Cor) ->
+                 case x of wild {
+                   Main.Vermelha -> Main.$fShowCor9
+                   Main.Verde -> Main.$fShowCor7
+                   Main.Branca -> Main.$fShowCor5
+                   Main.Amarela -> Main.$fShowCor3
+                   Main.Azul -> Main.$fShowCor1 }) -}
+0293980fa42f94664f2789c45f98c625
+  $fShowCor_$cshowList :: [Main.Cor] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Main.Cor]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Main.Cor Main.$w$cshowsPrec2 ls s) -}
+0293980fa42f94664f2789c45f98c625
+  $fShowCor_$cshowsPrec ::
+    GHC.Types.Int -> Main.Cor -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Main.Cor) (w2 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec2 w1 w2) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fShowNacao :: GHC.Show.Show Main.Nacao
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Nacao
+                  Main.$fShowNacao_$cshowsPrec
+                  Main.$fShowNacao_$cshow
+                  Main.$fShowNacao_$cshowList -}
+5b8e672383150ca1886c4929ca33efbf
+  $fShowNacao1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowNacao2) -}
+9178bc5106988e3d9f79e76332263fbd
+  $fShowNacao10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Inglaterra"#) -}
+885ae1b65e41f6dccfc62583320f7ee8
+  $fShowNacao2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Noruega"#) -}
+4c161c02988582c0cd5ee94fb091e20c
+  $fShowNacao3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowNacao4) -}
+9fe070b0cdab05d91be0d4b707697c1d
+  $fShowNacao4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Alemanha"#) -}
+1e29d5330cfb7a680e3b86e7a530d422
+  $fShowNacao5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowNacao6) -}
+e94f2045502db4c659c75969634833eb
+  $fShowNacao6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Dinamarca"#) -}
+f955b2f55f93779a1fdb6efc5b852986
+  $fShowNacao7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowNacao8) -}
+343f6a5a36f4a6a3941cf9153f57a37d
+  $fShowNacao8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Suecia"#) -}
+7eaae29aa2072088f989da949857fe19
+  $fShowNacao9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowNacao10) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fShowNacao_$cshow :: Main.Nacao -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Nacao) ->
+                 case x of wild {
+                   Main.Inglaterra -> Main.$fShowNacao9
+                   Main.Suecia -> Main.$fShowNacao7
+                   Main.Dinamarca -> Main.$fShowNacao5
+                   Main.Alemanha -> Main.$fShowNacao3
+                   Main.Noruega -> Main.$fShowNacao1 }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fShowNacao_$cshowList :: [Main.Nacao] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Main.Nacao]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Main.Nacao Main.$w$cshowsPrec3 ls s) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $fShowNacao_$cshowsPrec ::
+    GHC.Types.Int -> Main.Nacao -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Main.Nacao)
+                   (w2 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec3 w1 w2) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fShowPet :: GHC.Show.Show Main.Pet
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Pet
+                  Main.$fShowPet_$cshowsPrec
+                  Main.$fShowPet_$cshow
+                  Main.$fShowPet_$cshowList -}
+223578cb2f5e976741812202e301d0f5
+  $fShowPet1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowPet2) -}
+ed44306226617bf5c1c5391ee663e4dd
+  $fShowPet10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cachorro"#) -}
+1c1a537727096b96e3b45e3f64c078b0
+  $fShowPet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Zebra"#) -}
+64e8b32209b1127367bfed0e0f4a2295
+  $fShowPet3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowPet4) -}
+ae60e726e7fd694f0e3d703c7e6faea5
+  $fShowPet4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cavalo"#) -}
+154c44577620b2d92780533a9d30ec3b
+  $fShowPet5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowPet6) -}
+a0c67720aa7346f16dad5cde8e077fc3
+  $fShowPet6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Gato"#) -}
+e0883837665b3460fbc081a9facd2da6
+  $fShowPet7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowPet8) -}
+9ac17ee76ba0cebc7944a7452852bbcd
+  $fShowPet8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Passaro"#) -}
+751805c2b83b4264a3fd618fb1b12236
+  $fShowPet9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowPet10) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fShowPet_$cshow :: Main.Pet -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Pet) ->
+                 case x of wild {
+                   Main.Cachorro -> Main.$fShowPet9
+                   Main.Passaro -> Main.$fShowPet7
+                   Main.Gato -> Main.$fShowPet5
+                   Main.Cavalo -> Main.$fShowPet3
+                   Main.Zebra -> Main.$fShowPet1 }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fShowPet_$cshowList :: [Main.Pet] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Main.Pet]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Main.Pet Main.$w$cshowsPrec4 ls s) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $fShowPet_$cshowsPrec ::
+    GHC.Types.Int -> Main.Pet -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Main.Pet) (w2 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec4 w1 w2) -}
+ca069013b4ce8528795d6dbd4b4c7471
+  $tc'Agua :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3357686562931491582##
+                   10850900008106317666##
+                   Main.$trModule
+                   Main.$tc'Agua2
+                   0#
+                   Main.$tc'Agua1) -}
+a41981382e708337f9e96d790009108c
+  $tc'Agua1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+b891d1df89391c0487088777c01ef985
+  $tc'Agua2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Agua3) -}
+c11ce17cd414f6f4db8e320821a73698
+  $tc'Agua3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Agua"#) -}
+30c4e0ff53bb4911418541cab46e99d4
+  $tc'Alemanha :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16820577003662650434##
+                   18337849459593157275##
+                   Main.$trModule
+                   Main.$tc'Alemanha2
+                   0#
+                   Main.$tc'Alemanha1) -}
+352357776aeff65bd2a479765421f18a
+  $tc'Alemanha1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+6a0f02a9be9975f1e76ebdf5fa6dd891
+  $tc'Alemanha2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Alemanha3) -}
+29af0dff1039514682c886b50c497ce8
+  $tc'Alemanha3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Alemanha"#) -}
+a3af5f8934b66890344434c8183a534f
+  $tc'Amarela :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6978152983979485463##
+                   11876125729428289104##
+                   Main.$trModule
+                   Main.$tc'Amarela2
+                   0#
+                   Main.$tc'Amarela1) -}
+53c6c036dc7264aaf6679c41dc1bce7e
+  $tc'Amarela1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+504a9032164a129b68dc2958195ea23c
+  $tc'Amarela2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Amarela3) -}
+438bfb56edf5d8aa667276049e20ad17
+  $tc'Amarela3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Amarela"#) -}
+43f9c707b05a582f23954286384f2232
+  $tc'Azul :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3757557507488252619##
+                   5639532877344975769##
+                   Main.$trModule
+                   Main.$tc'Azul1
+                   0#
+                   Main.$tc'Amarela1) -}
+0889de6e38861aad59365ca19e14d29c
+  $tc'Azul1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Azul2) -}
+e48b41e7ae6df5a7b3de2465555aeb7c
+  $tc'Azul2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Azul"#) -}
+9d125e18ebee8abf827c3403a7712422
+  $tc'Blend :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8964520954206454071##
+                   15817427472474154620##
+                   Main.$trModule
+                   Main.$tc'Blend2
+                   0#
+                   Main.$tc'Blend1) -}
+85396a2177813d342a4d008c58feae60
+  $tc'Blend1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+b2d4aa3e61116016679a141ee29104bc
+  $tc'Blend2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Blend3) -}
+5f6ddd80f070dadfcaff97cadac68905
+  $tc'Blend3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Blend"#) -}
+b2191d46e0691c1957a8deba2cb8dc65
+  $tc'BlueMaster :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12272493781891078838##
+                   12020815973874738985##
+                   Main.$trModule
+                   Main.$tc'BlueMaster1
+                   0#
+                   Main.$tc'Blend1) -}
+230b380b4c5551a9d04ead380bd78dfc
+  $tc'BlueMaster1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'BlueMaster2) -}
+08a29cee005d54b4e1b8f4e926f16aba
+  $tc'BlueMaster2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BlueMaster"#) -}
+dd7680ffb59c680c94cec0ee7a0ebdfb
+  $tc'Branca :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8273822060175683927##
+                   14586514045275831632##
+                   Main.$trModule
+                   Main.$tc'Branca1
+                   0#
+                   Main.$tc'Amarela1) -}
+f30467174eab8f0e8949f059812ba4bb
+  $tc'Branca1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Branca2) -}
+c41c6f6086413360c454997caa6aef83
+  $tc'Branca2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Branca"#) -}
+85f00482635aac163e0ecd8ee7942106
+  $tc'Cachorro :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15325716763276147946##
+                   2412793271578280153##
+                   Main.$trModule
+                   Main.$tc'Cachorro2
+                   0#
+                   Main.$tc'Cachorro1) -}
+1526ac2723f110e1d19eb4cda8fe344a
+  $tc'Cachorro1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+fec274a48b5b3038ae38a17057a84f93
+  $tc'Cachorro2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Cachorro3) -}
+90a393308979a137a82b914e88506f1c
+  $tc'Cachorro3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cachorro"#) -}
+ec4469a981807fe9d5ccc78309723b5b
+  $tc'Cafe :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15804152659571403574##
+                   9286220281141033055##
+                   Main.$trModule
+                   Main.$tc'Cafe1
+                   0#
+                   Main.$tc'Agua1) -}
+c6550f7e7781f85256ef45c18c838c21
+  $tc'Cafe1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Cafe2) -}
+fc657485d880dc8bb9d4190c5e704fba
+  $tc'Cafe2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cafe"#) -}
+b195b7e51f5f95a49ff4712a82b912d7
+  $tc'Cavalo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17209559932024242820##
+                   9224243761908341466##
+                   Main.$trModule
+                   Main.$tc'Cavalo1
+                   0#
+                   Main.$tc'Cachorro1) -}
+8ce7bff42447b1acacf56ba0b958d9fa
+  $tc'Cavalo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Cavalo2) -}
+030f202aab84ed80a0caa6def75fc98f
+  $tc'Cavalo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cavalo"#) -}
+1821bbf58fe4d2c07fbe3c9c2539840d
+  $tc'Cerveja :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6455299820816164570##
+                   7198042398006438059##
+                   Main.$trModule
+                   Main.$tc'Cerveja1
+                   0#
+                   Main.$tc'Agua1) -}
+a2dcb0fbe71e9f1f74d4e0b3cc86d943
+  $tc'Cerveja1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Cerveja2) -}
+8ea34aa99aa2507c58f0136fe23f3391
+  $tc'Cerveja2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cerveja"#) -}
+5a2534f977823fda98be8139ca3b2101
+  $tc'Cha :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6125014085518987569##
+                   5701960675852842641##
+                   Main.$trModule
+                   Main.$tc'Cha1
+                   0#
+                   Main.$tc'Agua1) -}
+38fb9dab73132c5954f4f48715be0926
+  $tc'Cha1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Cha2) -}
+ad7dfc63921cfa8d967be4a89c0f21b0
+  $tc'Cha2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cha"#) -}
+aba50bda42f21ca9aed2764869eb6db2
+  $tc'Dinamarca :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16223054116406404282##
+                   947828724634646185##
+                   Main.$trModule
+                   Main.$tc'Dinamarca1
+                   0#
+                   Main.$tc'Alemanha1) -}
+8ae8ab08d68e05f75d15ab88e73125df
+  $tc'Dinamarca1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Dinamarca2) -}
+95fdb0b58495e4a697a1d175c6d2d1e5
+  $tc'Dinamarca2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Dinamarca"#) -}
+622afe0931b42678247ceeec985a4ade
+  $tc'Dunhill :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15465379441816277281##
+                   5642607325959763561##
+                   Main.$trModule
+                   Main.$tc'Dunhill1
+                   0#
+                   Main.$tc'Blend1) -}
+9cc224da884dbfc22980f472437f562c
+  $tc'Dunhill1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Dunhill2) -}
+9a66e38fc38391d9f3ef58b5e2c5d25e
+  $tc'Dunhill2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Dunhill"#) -}
+1e9d97925c11a46ea9a43e46deb2470e
+  $tc'Gato :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   764355026525490643##
+                   15516946094803147503##
+                   Main.$trModule
+                   Main.$tc'Gato1
+                   0#
+                   Main.$tc'Cachorro1) -}
+4cc9c688d4ff7ad8d083a6e951658090
+  $tc'Gato1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Gato2) -}
+2b1489989d53336b1859a7ee4046c911
+  $tc'Gato2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Gato"#) -}
+bda6e3eb654d7ca23a9ed0cb94472094
+  $tc'Inglaterra :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6900203730013658711##
+                   486700783992738319##
+                   Main.$trModule
+                   Main.$tc'Inglaterra1
+                   0#
+                   Main.$tc'Alemanha1) -}
+abb4f6b7d8caa20daa43766c9fce5abf
+  $tc'Inglaterra1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Inglaterra2) -}
+87259cc3e2090cd825ef1689b3d41888
+  $tc'Inglaterra2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Inglaterra"#) -}
+92948aa1f270077532205d198c263824
+  $tc'Leite :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8007302592836868208##
+                   4605828968222674978##
+                   Main.$trModule
+                   Main.$tc'Leite1
+                   0#
+                   Main.$tc'Agua1) -}
+6588b753eb914e49851299212079f54e
+  $tc'Leite1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Leite2) -}
+e26a9807a580afc427eb8ddccb18accd
+  $tc'Leite2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Leite"#) -}
+7d8340c90ad21876cafc3a0daffae71f
+  $tc'Noruega :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10599113242236044369##
+                   5382393532089403477##
+                   Main.$trModule
+                   Main.$tc'Noruega1
+                   0#
+                   Main.$tc'Alemanha1) -}
+dd77835bc009dcaf12bd067fb8977765
+  $tc'Noruega1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Noruega2) -}
+cbc1a550bdaa3f515313947e549c6954
+  $tc'Noruega2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Noruega"#) -}
+07af518ebedc1cf75bbf689833c8aada
+  $tc'PallMall :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1580181705896823463##
+                   15047131814632226688##
+                   Main.$trModule
+                   Main.$tc'PallMall1
+                   0#
+                   Main.$tc'Blend1) -}
+3aabed8d89311fdf027dc15836111841
+  $tc'PallMall1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'PallMall2) -}
+35ea5df9db10f398dc69c477cfae1876
+  $tc'PallMall2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PallMall"#) -}
+ee8e3cc45be9ae9c91efc34f3a941372
+  $tc'Passaro :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12684673412352758003##
+                   14008805558312817842##
+                   Main.$trModule
+                   Main.$tc'Passaro1
+                   0#
+                   Main.$tc'Cachorro1) -}
+ee536ae36cdddd755c9ae77dfd6b5fbb
+  $tc'Passaro1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Passaro2) -}
+f65fb756df4c6311fb4958e03288ac87
+  $tc'Passaro2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Passaro"#) -}
+5a56d91aabcad3b1a08175f0ccf133cc
+  $tc'Prince :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4668348889280112965##
+                   207312078426824980##
+                   Main.$trModule
+                   Main.$tc'Prince1
+                   0#
+                   Main.$tc'Blend1) -}
+9d443edaf19b2bf59b16b37049d42128
+  $tc'Prince1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Prince2) -}
+fb2f0751363459a446798e64a776d369
+  $tc'Prince2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Prince"#) -}
+c3686df6fb8c17e2462763ee3c3758b8
+  $tc'Suecia :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7528403945590505493##
+                   11684964646939535321##
+                   Main.$trModule
+                   Main.$tc'Suecia1
+                   0#
+                   Main.$tc'Alemanha1) -}
+623bb24f59349c474b5b112e42cc1fae
+  $tc'Suecia1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Suecia2) -}
+75dfaf89f13d5f863d15fb755d77ac2e
+  $tc'Suecia2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Suecia"#) -}
+afac4ac1cf761ae402f74f99fdcf94ac
+  $tc'Verde :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3281974618071621373##
+                   1941437510502863386##
+                   Main.$trModule
+                   Main.$tc'Verde1
+                   0#
+                   Main.$tc'Amarela1) -}
+cae5c5534aa02c9531f66c2408574cfa
+  $tc'Verde1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Verde2) -}
+943e7fac7a40d2868dc4fc471d38f109
+  $tc'Verde2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Verde"#) -}
+efc32767a8985b755f2bba7b07afa6db
+  $tc'Vermelha :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7680306956491681568##
+                   17646234126406697274##
+                   Main.$trModule
+                   Main.$tc'Vermelha1
+                   0#
+                   Main.$tc'Amarela1) -}
+61f4eaaabc88a4fdabaa5cc297777713
+  $tc'Vermelha1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Vermelha2) -}
+c2dff3271bed8157ee6e353294bbc304
+  $tc'Vermelha2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Vermelha"#) -}
+68a88a6ad938685c970c075cdd8252d3
+  $tc'Zebra :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16354035292390196920##
+                   5963428748222265690##
+                   Main.$trModule
+                   Main.$tc'Zebra1
+                   0#
+                   Main.$tc'Cachorro1) -}
+e7b5d83827ddc20d7d2393d38b46c706
+  $tc'Zebra1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Zebra2) -}
+a3c9ae9a8cd1141f07577f019271a3ac
+  $tc'Zebra2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Zebra"#) -}
+17d462b5791b0c68cdbd22ac9c717df4
+  $tcBebida :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14227733049074549912##
+                   1327833719647191767##
+                   Main.$trModule
+                   Main.$tcBebida1
+                   0#
+                   GHC.Types.krep$*) -}
+e6c1def2afeaacb07e47ef12a9fd6cf1
+  $tcBebida1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tcBebida2) -}
+57fffb99adbe32f656ae91b61b65115d
+  $tcBebida2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Bebida"#) -}
+cb6d0b0bba825ac54284633c9594c7a4
+  $tcCigarro :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8552825069074560879##
+                   392702486354578724##
+                   Main.$trModule
+                   Main.$tcCigarro1
+                   0#
+                   GHC.Types.krep$*) -}
+de5473aac88124a2efa438bf60ed7b6a
+  $tcCigarro1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tcCigarro2) -}
+6ee5813b6d5877249ac2a802b2c4e627
+  $tcCigarro2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cigarro"#) -}
+c7a5d87b6ebdf3f72973773a3a5dbe6b
+  $tcCor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7264673717489674411##
+                   17541146853679552689##
+                   Main.$trModule
+                   Main.$tcCor1
+                   0#
+                   GHC.Types.krep$*) -}
+6a9884a8287c11397d4b0b0edbeef845
+  $tcCor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tcCor2) -}
+73b0375e572d57896262fbe60818a71c
+  $tcCor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cor"#) -}
+4bec2f4a9c7cabcd82f6eb9694cf2a90
+  $tcNacao :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10988601401736548803##
+                   3366069848380631850##
+                   Main.$trModule
+                   Main.$tcNacao1
+                   0#
+                   GHC.Types.krep$*) -}
+881fc101b4e04df1d0f07a4b02f8eb35
+  $tcNacao1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tcNacao2) -}
+962413bba5676571c1ffe68e3fcd1272
+  $tcNacao2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Nacao"#) -}
+3a5b0915eaf3e4ec8d8e98c8829885e6
+  $tcPet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4998873191594771229##
+                   4010180441445891258##
+                   Main.$trModule
+                   Main.$tcPet1
+                   0#
+                   GHC.Types.krep$*) -}
+5b6a3934f74eeb12b364cc33ee5a0a84
+  $tcPet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tcPet2) -}
+35f6bc006a5a070af360b1e5d320b104
+  $tcPet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Pet"#) -}
+be86c9d078d3acbf19ba91fe74a24273
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+b09d86f2c49dd5176b544d8d13ddb6c5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+23b03bd7d075a00f5ad1ee10e6add7b8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+30fc2874014b24d30ad359628ac3cb26
+  $w$cshowsPrec :: Main.Bebida -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Main.Bebida) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Main.Cha -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBebida9 w1
+                   Main.Cafe -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBebida7 w1
+                   Main.Leite -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBebida5 w1
+                   Main.Cerveja -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBebida3 w1
+                   Main.Agua
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBebida1 w1 }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $w$cshowsPrec1 ::
+    Main.Cigarro -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Main.Cigarro) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Main.PallMall
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCigarro9 w1
+                   Main.Dunhill -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCigarro7 w1
+                   Main.Blend -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCigarro5 w1
+                   Main.Prince -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCigarro3 w1
+                   Main.BlueMaster
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCigarro1 w1 }) -}
+0293980fa42f94664f2789c45f98c625
+  $w$cshowsPrec2 :: Main.Cor -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Main.Cor) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Main.Vermelha -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCor9 w1
+                   Main.Verde -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCor7 w1
+                   Main.Branca -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCor5 w1
+                   Main.Amarela -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCor3 w1
+                   Main.Azul -> GHC.Base.++ @ GHC.Types.Char Main.$fShowCor1 w1 }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $w$cshowsPrec3 :: Main.Nacao -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Main.Nacao) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Main.Inglaterra
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowNacao9 w1
+                   Main.Suecia -> GHC.Base.++ @ GHC.Types.Char Main.$fShowNacao7 w1
+                   Main.Dinamarca -> GHC.Base.++ @ GHC.Types.Char Main.$fShowNacao5 w1
+                   Main.Alemanha -> GHC.Base.++ @ GHC.Types.Char Main.$fShowNacao3 w1
+                   Main.Noruega
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowNacao1 w1 }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $w$cshowsPrec4 :: Main.Pet -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Main.Pet) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Main.Cachorro -> GHC.Base.++ @ GHC.Types.Char Main.$fShowPet9 w1
+                   Main.Passaro -> GHC.Base.++ @ GHC.Types.Char Main.$fShowPet7 w1
+                   Main.Gato -> GHC.Base.++ @ GHC.Types.Char Main.$fShowPet5 w1
+                   Main.Cavalo -> GHC.Base.++ @ GHC.Types.Char Main.$fShowPet3 w1
+                   Main.Zebra -> GHC.Base.++ @ GHC.Types.Char Main.$fShowPet1 w1 }) -}
+30fc2874014b24d30ad359628ac3cb26
+  $w$ctoEnum :: GHC.Prim.Int# -> Main.Bebida
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Main.$wlvl ww
+                   1#
+                   -> case GHC.Prim.<=# ww 4# of lwild1 {
+                        DEFAULT -> Main.$wlvl ww
+                        1# -> GHC.Prim.tagToEnum# @ Main.Bebida ww } }) -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $w$ctoEnum1 :: GHC.Prim.Int# -> Main.Cigarro
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Main.$wlvl1 ww
+                   1#
+                   -> case GHC.Prim.<=# ww 4# of lwild1 {
+                        DEFAULT -> Main.$wlvl1 ww
+                        1# -> GHC.Prim.tagToEnum# @ Main.Cigarro ww } }) -}
+0293980fa42f94664f2789c45f98c625
+  $w$ctoEnum2 :: GHC.Prim.Int# -> Main.Cor
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Main.$wlvl2 ww
+                   1#
+                   -> case GHC.Prim.<=# ww 4# of lwild1 {
+                        DEFAULT -> Main.$wlvl2 ww
+                        1# -> GHC.Prim.tagToEnum# @ Main.Cor ww } }) -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $w$ctoEnum3 :: GHC.Prim.Int# -> Main.Nacao
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Main.$wlvl3 ww
+                   1#
+                   -> case GHC.Prim.<=# ww 4# of lwild1 {
+                        DEFAULT -> Main.$wlvl3 ww
+                        1# -> GHC.Prim.tagToEnum# @ Main.Nacao ww } }) -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $w$ctoEnum4 :: GHC.Prim.Int# -> Main.Pet
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Main.$wlvl4 ww
+                   1#
+                   -> case GHC.Prim.<=# ww 4# of lwild1 {
+                        DEFAULT -> Main.$wlvl4 ww
+                        1# -> GHC.Prim.tagToEnum# @ Main.Pet ww } }) -}
+16a3569758823c6d1af1c3e98a6e4d31
+  $wds ::
+    Main.Nacao
+    -> Main.Cor
+    -> Main.Pet
+    -> Main.Bebida
+    -> Main.Cigarro
+    -> GHC.Base.String
+    -> (# GHC.Types.Char, [GHC.Types.Char] #)
+  {- Arity: 6, Strictness: <L,1*U><L,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Main.Nacao)
+                   (ww1 :: Main.Cor)
+                   (ww2 :: Main.Pet)
+                   (ww3 :: Main.Bebida)
+                   (ww4 :: Main.Cigarro)
+                   (w :: GHC.Base.String) ->
+                 (# GHC.Show.$fShow(,)4,
+                    let {
+                      karg :: GHC.Base.String
+                      = GHC.Show.$fShow(,,,,)_$sgo2
+                          (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)
+                          (\ (w1 :: GHC.Base.String)[OneShot] -> Main.$w$cshowsPrec2 ww1 w1)
+                          (GHC.Types.:
+                             @ GHC.Show.ShowS
+                             (\ (w1 :: GHC.Base.String) -> Main.$w$cshowsPrec4 ww2 w1)
+                             (GHC.Types.:
+                                @ GHC.Show.ShowS
+                                (\ (w1 :: GHC.Base.String) -> Main.$w$cshowsPrec ww3 w1)
+                                (GHC.Types.:
+                                   @ GHC.Show.ShowS
+                                   (\ (w1 :: GHC.Base.String) -> Main.$w$cshowsPrec1 ww4 w1)
+                                   (GHC.Types.[] @ GHC.Show.ShowS))))
+                    } in
+                    case ww of wild {
+                      Main.Inglaterra
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Main.$fShowNacao9
+                           (GHC.Types.: @ GHC.Types.Char GHC.Show.showList__1 karg)
+                      Main.Suecia
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Main.$fShowNacao7
+                           (GHC.Types.: @ GHC.Types.Char GHC.Show.showList__1 karg)
+                      Main.Dinamarca
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Main.$fShowNacao5
+                           (GHC.Types.: @ GHC.Types.Char GHC.Show.showList__1 karg)
+                      Main.Alemanha
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Main.$fShowNacao3
+                           (GHC.Types.: @ GHC.Types.Char GHC.Show.showList__1 karg)
+                      Main.Noruega
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Main.$fShowNacao1
+                           (GHC.Types.: @ GHC.Types.Char GHC.Show.showList__1 karg) } #)) -}
+1a78f98a9a188d7bdba638cbb60aaad0
+  $wgo :: GHC.Prim.Int# -> (# Main.Pet, [Main.Pet] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+30fc2874014b24d30ad359628ac3cb26
+  $wlvl :: GHC.Prim.Int# -> Main.Bebida
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+8f383d83b156a5d8aa33db62058c7e2e
+  $wlvl1 :: GHC.Prim.Int# -> Main.Cigarro
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+0293980fa42f94664f2789c45f98c625
+  $wlvl2 :: GHC.Prim.Int# -> Main.Cor
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+1fe14ffe50085aacbc37fac08e9d8c09
+  $wlvl3 :: GHC.Prim.Int# -> Main.Nacao
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  $wlvl4 :: GHC.Prim.Int# -> Main.Pet
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+3c961d4c771912bd95bb6e4859a1e6e1
+  $wshowl ::
+    [(Main.Nacao, Main.Cor, Main.Pet, Main.Bebida, Main.Cigarro)]
+    -> (# GHC.Types.Char, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+30fc2874014b24d30ad359628ac3cb26
+  data Bebida = Cha | Cafe | Leite | Cerveja | Agua
+8f383d83b156a5d8aa33db62058c7e2e
+  data Cigarro = PallMall | Dunhill | Blend | Prince | BlueMaster
+0293980fa42f94664f2789c45f98c625
+  data Cor = Vermelha | Verde | Branca | Amarela | Azul
+1fe14ffe50085aacbc37fac08e9d8c09
+  data Nacao = Inglaterra | Suecia | Dinamarca | Alemanha | Noruega
+d4ccfc0a9ca1fd19246fa8623f96d4a0
+  data Pet = Cachorro | Passaro | Gato | Cavalo | Zebra
+71c1dc3981ba434c1a6596f53372d515
+  aEsquerdaDe ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    a -> [a] -> b -> [b] -> GHC.Types.Bool
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U><S,1*U><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dEq1 :: GHC.Classes.Eq b)
+                   (x' :: a)
+                   (ds :: [a])
+                   (y' :: b)
+                   (ds1 :: [b]) ->
+                 case ds of wild {
+                   [] -> Main.aEsquerdaDe1
+                   : x xs
+                   -> case ds1 of wild1 {
+                        [] -> Main.aEsquerdaDe1
+                        : y ys -> Main.mesmaCasa @ a @ b $dEq $dEq1 x' wild y' ys } }) -}
+6b708f1fb12ca3ce7b0be8cec0b9990f
+  aEsquerdaDe1 :: GHC.Types.Bool
+  {- Strictness: x -}
+780d1ef93511e3c92672adcd4bce9252
+  aEsquerdaDe_$smesmaCasa ::
+    Main.Cor -> [Main.Cor] -> Main.Cor -> [Main.Cor] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+67f21174138bbecdae01f7b4780498f1
+  aEsquerdaDe_$smesmaCasa1 ::
+    Main.Cigarro
+    -> [Main.Cigarro] -> Main.Bebida -> [Main.Bebida] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+f2f20213090ee74906c09cdf0046ce0d
+  aEsquerdaDe_$smesmaCasa2 ::
+    Main.Bebida
+    -> [Main.Bebida]
+    -> Main.Cigarro
+    -> [Main.Cigarro]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+1cae95cf9a9e7d5ecf2d9a90d0641c52
+  aEsquerdaDe_$smesmaCasa3 ::
+    Main.Cor
+    -> [Main.Cor] -> Main.Nacao -> [Main.Nacao] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+8970a51ab580ef1b697dd9db10d5d72b
+  aEsquerdaDe_$smesmaCasa4 ::
+    Main.Nacao
+    -> [Main.Nacao] -> Main.Cor -> [Main.Cor] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+56f13d10c3a772c2007506184c2432f7
+  aEsquerdaDe_$smesmaCasa5 ::
+    Main.Pet
+    -> [Main.Pet] -> Main.Cigarro -> [Main.Cigarro] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+846112234e464d98550d558cc5151cdd
+  aEsquerdaDe_$smesmaCasa6 ::
+    Main.Cigarro
+    -> [Main.Cigarro] -> Main.Pet -> [Main.Pet] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+03d72b9dc07b6c135d171213f935b74c
+  aoLadoDe ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    a -> [a] -> b -> [b] -> GHC.Types.Bool
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U><S,1*U><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dEq1 :: GHC.Classes.Eq b)
+                   (x :: a)
+                   (xs :: [a])
+                   (y :: b)
+                   (ys :: [b]) ->
+                 case xs of wild {
+                   [] -> Main.aEsquerdaDe1
+                   : x1 xs4
+                   -> case ys of wild1 {
+                        [] -> Main.aEsquerdaDe1
+                        : y1 ys1
+                        -> case Main.mesmaCasa @ a @ b $dEq $dEq1 x wild y ys1 of wild2 {
+                             GHC.Types.False -> Main.mesmaCasa @ b @ a $dEq1 $dEq y wild1 x xs4
+                             GHC.Types.True -> GHC.Types.True } } }) -}
+d3ea52f6ea94f6ee2e7069a8c6d0e2a0
+  casaMeio :: GHC.Classes.Eq a => a -> [a] -> GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x' :: a)
+                   (xs :: [a]) ->
+                 GHC.Classes.==
+                   @ a
+                   $dEq
+                   x'
+                   (case GHC.List.$wlenAcc @ a xs 0# of ww2 { DEFAULT ->
+                    GHC.List.$w!!
+                      @ a
+                      xs
+                      (GHC.Prim.-#
+                         (GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# ww2 1#) 1#)
+                         1#) })) -}
+cf62175847fb3fb5f87e3aca09f8d194
+  casaMeio_$scasaMeio ::
+    Main.Bebida -> [Main.Bebida] -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (x' :: Main.Bebida) (xs :: [Main.Bebida]) ->
+                 case GHC.List.$wlenAcc @ Main.Bebida xs 0# of ww2 { DEFAULT ->
+                 Main.$fEqBebida_$c==
+                   x'
+                   (GHC.List.$w!!
+                      @ Main.Bebida
+                      xs
+                      (GHC.Prim.-#
+                         (GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# ww2 1#) 1#)
+                         1#)) }) -}
+c54b0add1058655d769bd3d76a703b0a
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+e44569126a22c643dfa059666ce0cd44
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True) -}
+f37684527b51cbce96167d62d466f868
+  main2 :: GHC.Base.String
+  {- Unfolding: (case Main.main_go Main.solucoes of wild {
+                   []
+                   -> GHC.CString.unpackAppendCString#
+                        GHC.Show.showList__4
+                        (GHC.Types.[] @ GHC.Types.Char)
+                   : x xs
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.showList__3
+                        (case x of ww { (,,,,) ww1 ww2 ww3 ww4 ww5 ->
+                         case Main.$wds
+                                ww1
+                                ww2
+                                ww3
+                                ww4
+                                ww5
+                                (Main.main_showl xs) of ww6 { (#,#) ww7 ww8 ->
+                         GHC.Types.: @ GHC.Types.Char ww7 ww8 } }) }) -}
+f5dd9e4b4920bf687ff3f04d90c05630
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+2fa822864d8fbb658fedf0417eab1d82
+  main_go ::
+    [([Main.Nacao], [Main.Cor], [Main.Pet], [Main.Bebida],
+      [Main.Cigarro])]
+    -> [(Main.Nacao, Main.Cor, Main.Pet, Main.Bebida, Main.Cigarro)]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [([Main.Nacao], [Main.Cor], [Main.Pet],
+                            [Main.Bebida], [Main.Cigarro])]) ->
+                 case ds of wild {
+                   []
+                   -> GHC.List.badHead
+                        @ [(Main.Nacao, Main.Cor, Main.Pet, Main.Bebida, Main.Cigarro)]
+                   : y ys
+                   -> case y of wild1 { (,,,,) n c p b cig ->
+                      Data.OldList.zipWith5
+                        @ Main.Nacao
+                        @ Main.Cor
+                        @ Main.Pet
+                        @ Main.Bebida
+                        @ Main.Cigarro
+                        @ (Main.Nacao, Main.Cor, Main.Pet, Main.Bebida, Main.Cigarro)
+                        (GHC.Tuple.(,,,,)
+                           @ Main.Nacao
+                           @ Main.Cor
+                           @ Main.Pet
+                           @ Main.Bebida
+                           @ Main.Cigarro)
+                        n
+                        c
+                        p
+                        b
+                        cig } }) -}
+a1aa7ee94ef9c1a027498a5bd5734879
+  main_showl ::
+    [(Main.Nacao, Main.Cor, Main.Pet, Main.Bebida, Main.Cigarro)]
+    -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [(Main.Nacao, Main.Cor, Main.Pet, Main.Bebida,
+                           Main.Cigarro)]) ->
+                 case Main.$wshowl w of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Char ww1 ww2 }) -}
+e5235ac16ceef36c68e49ffe5f718798
+  mesmaCasa ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    a -> [a] -> b -> [b] -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><L,U><S,1*U><L,U><L,1*U> -}
+ae8aa552080c991b8cb23eb5337057d7
+  mesmaCasa_$smesmaCasa ::
+    Main.Nacao
+    -> [Main.Nacao] -> Main.Cigarro -> [Main.Cigarro] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+182f528c51abfd10df8a15cbfa1f0ed5
+  mesmaCasa_$smesmaCasa1 ::
+    Main.Cigarro
+    -> [Main.Cigarro] -> Main.Cor -> [Main.Cor] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+7023b534202dd9ed91f40c4301b35924
+  mesmaCasa_$smesmaCasa2 ::
+    Main.Bebida
+    -> [Main.Bebida] -> Main.Cor -> [Main.Cor] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+7d6b5f5607524c1a60a8d5c9d5017b65
+  mesmaCasa_$smesmaCasa3 ::
+    Main.Nacao
+    -> [Main.Nacao] -> Main.Bebida -> [Main.Bebida] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+b1d0ac04c8732efce8f099408811a853
+  mesmaCasa_$smesmaCasa4 ::
+    Main.Nacao
+    -> [Main.Nacao] -> Main.Pet -> [Main.Pet] -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><S,1*U><L,1*U><L,1*U> -}
+e6924ee5629f08f667a4a6e98e09821e
+  perms :: (GHC.Enum.Bounded a, GHC.Enum.Enum a) => [[a]]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,1*U)><L,1*U(A,A,A,A,A,A,1*C1(C1(U)),A)>m2,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Enum.Bounded a) (w1 :: GHC.Enum.Enum a) ->
+                 let {
+                   xs4 :: [a]
+                   = GHC.Enum.enumFromTo
+                       @ a
+                       w1
+                       (GHC.Enum.minBound @ a w)
+                       (GHC.Enum.maxBound @ a w)
+                 } in
+                 GHC.Types.:
+                   @ [a]
+                   xs4
+                   (Data.OldList.permutations1 @ a xs4 (GHC.Types.[] @ a))) -}
+3f8dac450b3c14c40d747275a90f53b1
+  primeiraCasa :: GHC.Classes.Eq a => a -> [a] -> GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (x' :: a) (xs :: [a]) ->
+                 GHC.Classes.==
+                   @ a
+                   $dEq
+                   x'
+                   (case xs of wild { [] -> GHC.List.badHead @ a : x ds1 -> x })) -}
+effb87f12bfbc3e3fef5e2c6ca216cbe
+  solucoes ::
+    [([Main.Nacao], [Main.Cor], [Main.Pet], [Main.Bebida],
+      [Main.Cigarro])]
+  {- Unfolding: (Main.solucoes_go Main.solucoes1) -}
+e825623cd5a53fed5f20889def09d755
+  solucoes1 :: [[Main.Pet]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [Main.Pet]
+                   Main.solucoes_xs0
+                   Main.solucoes2) -}
+dee9cf34801f9a231626c7e791e3aa47
+  solucoes2 :: [[Main.Pet]]
+  {- Unfolding: (Data.OldList.permutations1
+                   @ Main.Pet
+                   Main.solucoes_xs0
+                   (GHC.Types.[] @ Main.Pet)) -}
+d0e9c4cbc1eec344802de959239aba09
+  solucoes_go ::
+    [[Main.Pet]]
+    -> [([Main.Nacao], [Main.Cor], [Main.Pet], [Main.Bebida],
+         [Main.Cigarro])]
+  {- Arity: 1, Strictness: <S,1*U> -}
+9fe94748b6f2d05f256957fddf7a054b
+  solucoes_xs0 :: [Main.Pet]
+  {- Unfolding: (case Main.$wgo 0# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ Main.Pet ww1 ww2 }) -}
+instance [safe] GHC.Enum.Bounded [Main.Bebida]
+  = Main.$fBoundedBebida
+instance [safe] GHC.Enum.Bounded [Main.Cigarro]
+  = Main.$fBoundedCigarro
+instance [safe] GHC.Enum.Bounded [Main.Cor] = Main.$fBoundedCor
+instance [safe] GHC.Enum.Bounded [Main.Nacao] = Main.$fBoundedNacao
+instance [safe] GHC.Enum.Bounded [Main.Pet] = Main.$fBoundedPet
+instance [safe] GHC.Enum.Enum [Main.Bebida] = Main.$fEnumBebida
+instance [safe] GHC.Enum.Enum [Main.Cigarro] = Main.$fEnumCigarro
+instance [safe] GHC.Enum.Enum [Main.Cor] = Main.$fEnumCor
+instance [safe] GHC.Enum.Enum [Main.Nacao] = Main.$fEnumNacao
+instance [safe] GHC.Enum.Enum [Main.Pet] = Main.$fEnumPet
+instance [safe] GHC.Classes.Eq [Main.Bebida] = Main.$fEqBebida
+instance [safe] GHC.Classes.Eq [Main.Cigarro] = Main.$fEqCigarro
+instance [safe] GHC.Classes.Eq [Main.Cor] = Main.$fEqCor
+instance [safe] GHC.Classes.Eq [Main.Nacao] = Main.$fEqNacao
+instance [safe] GHC.Classes.Eq [Main.Pet] = Main.$fEqPet
+instance [safe] GHC.Show.Show [Main.Bebida] = Main.$fShowBebida
+instance [safe] GHC.Show.Show [Main.Cigarro] = Main.$fShowCigarro
+instance [safe] GHC.Show.Show [Main.Cor] = Main.$fShowCor
+instance [safe] GHC.Show.Show [Main.Nacao] = Main.$fShowNacao
+instance [safe] GHC.Show.Show [Main.Pet] = Main.$fShowPet
+"SPEC casaMeio @ Bebida" forall ($dEq :: GHC.Classes.Eq
+                                           Main.Bebida)
+  Main.casaMeio @ Main.Bebida $dEq = Main.casaMeio_$scasaMeio
+"SPEC mesmaCasa @ Bebida @ Cigarro" forall ($dEq :: GHC.Classes.Eq
+                                                      Main.Cigarro)
+                                           ($dEq1 :: GHC.Classes.Eq Main.Bebida)
+  Main.mesmaCasa @ Main.Bebida @ Main.Cigarro $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa2
+"SPEC mesmaCasa @ Bebida @ Cor" forall ($dEq :: GHC.Classes.Eq
+                                                  Main.Cor)
+                                       ($dEq1 :: GHC.Classes.Eq Main.Bebida)
+  Main.mesmaCasa @ Main.Bebida @ Main.Cor $dEq1 $dEq
+  = Main.mesmaCasa_$smesmaCasa2
+"SPEC mesmaCasa @ Cigarro @ Bebida" forall ($dEq :: GHC.Classes.Eq
+                                                      Main.Bebida)
+                                           ($dEq1 :: GHC.Classes.Eq Main.Cigarro)
+  Main.mesmaCasa @ Main.Cigarro @ Main.Bebida $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa1
+"SPEC mesmaCasa @ Cigarro @ Cor" forall ($dEq :: GHC.Classes.Eq
+                                                   Main.Cor)
+                                        ($dEq1 :: GHC.Classes.Eq Main.Cigarro)
+  Main.mesmaCasa @ Main.Cigarro @ Main.Cor $dEq1 $dEq
+  = Main.mesmaCasa_$smesmaCasa1
+"SPEC mesmaCasa @ Cigarro @ Pet" forall ($dEq :: GHC.Classes.Eq
+                                                   Main.Pet)
+                                        ($dEq1 :: GHC.Classes.Eq Main.Cigarro)
+  Main.mesmaCasa @ Main.Cigarro @ Main.Pet $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa6
+"SPEC mesmaCasa @ Cor @ Cor" forall ($dEq :: GHC.Classes.Eq
+                                               Main.Cor)
+                                    ($dEq1 :: GHC.Classes.Eq Main.Cor)
+  Main.mesmaCasa @ Main.Cor @ Main.Cor $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa
+"SPEC mesmaCasa @ Cor @ Nacao" forall ($dEq :: GHC.Classes.Eq
+                                                 Main.Nacao)
+                                      ($dEq1 :: GHC.Classes.Eq Main.Cor)
+  Main.mesmaCasa @ Main.Cor @ Main.Nacao $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa3
+"SPEC mesmaCasa @ Nacao @ Bebida" forall ($dEq :: GHC.Classes.Eq
+                                                    Main.Bebida)
+                                         ($dEq1 :: GHC.Classes.Eq Main.Nacao)
+  Main.mesmaCasa @ Main.Nacao @ Main.Bebida $dEq1 $dEq
+  = Main.mesmaCasa_$smesmaCasa3
+"SPEC mesmaCasa @ Nacao @ Cigarro" forall ($dEq :: GHC.Classes.Eq
+                                                     Main.Cigarro)
+                                          ($dEq1 :: GHC.Classes.Eq Main.Nacao)
+  Main.mesmaCasa @ Main.Nacao @ Main.Cigarro $dEq1 $dEq
+  = Main.mesmaCasa_$smesmaCasa
+"SPEC mesmaCasa @ Nacao @ Cor" forall ($dEq :: GHC.Classes.Eq
+                                                 Main.Cor)
+                                      ($dEq1 :: GHC.Classes.Eq Main.Nacao)
+  Main.mesmaCasa @ Main.Nacao @ Main.Cor $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa4
+"SPEC mesmaCasa @ Nacao @ Pet" forall ($dEq :: GHC.Classes.Eq
+                                                 Main.Pet)
+                                      ($dEq1 :: GHC.Classes.Eq Main.Nacao)
+  Main.mesmaCasa @ Main.Nacao @ Main.Pet $dEq1 $dEq
+  = Main.mesmaCasa_$smesmaCasa4
+"SPEC mesmaCasa @ Pet @ Cigarro" forall ($dEq :: GHC.Classes.Eq
+                                                   Main.Cigarro)
+                                        ($dEq1 :: GHC.Classes.Eq Main.Pet)
+  Main.mesmaCasa @ Main.Pet @ Main.Cigarro $dEq1 $dEq
+  = Main.aEsquerdaDe_$smesmaCasa5
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
