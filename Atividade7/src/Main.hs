@@ -1,3 +1,24 @@
+--Reposta: (Alemanha,Verde,Zebra,Cafe,Prince)
+
+--1. Existem cinco casas.
+--2. O inglês mora na cada vermelha.
+--3. O Sueco tem um cachorro.
+--4. O dinamarquês bebe chá.
+--5. A casa verde está imediatamente a esquerda da casa branca.
+--6. Eles bebem café na casa verde.
+--7. O homem que fuma Pall Mall tem um pássaro.
+--8. Na casa amarela eles fumam Dunhill.
+--9. Na casa do meio eles bebem leite.
+--10. O norueguês mora na primeira casa.
+--11. O homem que fuma Blend mora na casa ao lado da casa com gatos.
+--12. Em uma casa ao lado da casa com um cavalo, eles fumam Dunhill.
+--13. O homem que fuma Blue Master bebe cerveja.
+--14. O Alemão fuma Prince.
+--15. O norueguês mora na casa ao lado da casa azul.
+--16. Eles bebem água na casa ao lado da casa de quem fuma Blend.
+
+
+
 module Main where
 
 import Control.Monad
