@@ -1,0 +1,442 @@
+
+==================== FINAL INTERFACE ====================
+2018-08-19 04:03:34.4355934 UTC
+
+interface main:KMeansPar 8043
+  interface hash: 65ca9d909ee71fe6b90a3e6bc1a5be84
+  ABI hash: 8d21a493829fdf86e0d12fc6dc5534ca
+  export-list hash: 04746c922dcef96ce739a73b08f31eee
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3c63d80ed12fe44f41a88679f337db88
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  KMeansPar..+.
+  KMeansPar..-.
+  KMeansPar../
+  KMeansPar..^
+  KMeansPar.assign
+  KMeansPar.kmeans
+  KMeansPar.length'
+  KMeansPar.somaClusters
+  KMeansPar.somaVetor
+  KMeansPar.step
+  KMeansPar.ChunksOf{KMeansPar.ChunksOf}
+  KMeansPar.Cluster
+  KMeansPar.Ponto
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.11.1.0
+                      containers-0.5.11.0 deepseq-1.4.3.0 ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0 parallel-3.2.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Set.Internal
+import  -/  array-0.5.2.0:Data.Array 1a916647bb0153f7934dab08f5c20771
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.Function 80e4d03eeed24407b53db03220e6e19e
+import  -/  base-4.11.1.0:Data.Functor 920435f8ff93fffe1aec86c79e4fd45f
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:Data.Tuple bfd15ca14ee9b1b9cd782c618946afb4
+import  -/  base-4.11.1.0:GHC.Arr aa9e85cbf0c662d051f2d3d53b267505
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Float 99ddb84df6cc12bd84829dd8cd755ac2
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 2a5b8dca95ab754971360a4cfde5100d
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  parallel-3.2.2.0:Control.Parallel.Strategies 16e7c20011a6d3f9b4f68e63f663ecdc
+63411ef3db313126f4c5b014a7d343ab
+  $tc'ChunksOf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14957401943699130317##
+                   4045059933562354363##
+                   KMeansPar.$trModule
+                   KMeansPar.$tc'ChunksOf2
+                   1#
+                   KMeansPar.$tc'ChunksOf1) -}
+9208f321237468c75e2963e60679f252
+  $tc'ChunksOf1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+277d40b69061e3d9f288e3fe29b7a42e
+  $tc'ChunksOf2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS KMeansPar.$tc'ChunksOf3) -}
+25b0545eff8e25f62e0fe003e40ddc37
+  $tc'ChunksOf3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ChunksOf"#) -}
+f53a4435c985c6182e77c5865cb2be36
+  $tcChunksOf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7623668433181210655##
+                   7455354532095266353##
+                   KMeansPar.$trModule
+                   KMeansPar.$tcChunksOf1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+84d2a0c7a7ee7a540734367f19fd7ca2
+  $tcChunksOf1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS KMeansPar.$tcChunksOf2) -}
+f08e96c23179c6913a0e7627f48da2b7
+  $tcChunksOf2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ChunksOf"#) -}
+08cee7bcf227211b5f47894d0053b88a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   KMeansPar.$trModule3
+                   KMeansPar.$trModule1) -}
+9128f8ea688d10575d5652bfe2e319ba
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS KMeansPar.$trModule2) -}
+f8a56a8575a2f8dee5149c603cb190df
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("KMeansPar"#) -}
+53fb9888f36498ac181c8d0d582b63e5
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS KMeansPar.$trModule4) -}
+7d5ab113994f381d64ef6de0b643c921
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+4f35e3b74da4d1cc37693409912957a7
+  $wkmeans ::
+    [[KMeansPar.Ponto]]
+    -> [KMeansPar.Cluster] -> [(KMeansPar.Cluster, GHC.Types.Double)]
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: [[KMeansPar.Ponto]])
+                   (w :: [KMeansPar.Cluster]) ->
+                 letrec {
+                   go2 :: [[KMeansPar.Ponto]]
+                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                [[(KMeansPar.Cluster, GHC.Types.Double)]] #)
+                     {- Arity: 2, Strictness: <S,1*U><S,U> -}
+                   = \ (ds :: [[KMeansPar.Ponto]])
+                       (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case ds of wild {
+                       []
+                       -> (# eta,
+                             GHC.Types.[] @ [(KMeansPar.Cluster, GHC.Types.Double)] #)
+                       : y ys
+                       -> case GHC.Prim.spark#
+                                 @ (Control.Parallel.Strategies.Lift
+                                      [(KMeansPar.Cluster, GHC.Types.Double)])
+                                 @ GHC.Prim.RealWorld
+                                 (case GHC.Magic.runRW#
+                                         @ ('GHC.Types.TupleRep
+                                              '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                                         @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                              Control.Parallel.Strategies.Lift
+                                                [(KMeansPar.Cluster, GHC.Types.Double)] #)
+                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          case GHC.Prim.seq#
+                                                 @ [(KMeansPar.Cluster, GHC.Types.Double)]
+                                                 @ GHC.Prim.RealWorld
+                                                 (case KMeansPar.assign
+                                                         w
+                                                         y of ww1 { GHC.Arr.Array ww2 ww3 ww4 ww5 ->
+                                                  case ww2 of ww6 { GHC.Types.I# ww7 ->
+                                                  case ww3 of ww8 { GHC.Types.I# ww9 ->
+                                                  let {
+                                                    x :: [(KMeansPar.Cluster, GHC.Types.Double)]
+                                                    = KMeansPar.$wsomaClusters ww7 ww9 ww5
+                                                  } in
+                                                  case KMeansPar.kmeans_go1 x of wild1 { () ->
+                                                  x } } } })
+                                                 s1 of ds1 { (#,#) ipv ipv1 ->
+                                          (# ipv,
+                                             Control.Parallel.Strategies.Lift
+                                               @ [(KMeansPar.Cluster, GHC.Types.Double)]
+                                               ipv1 #) }) of ds1 { (#,#) ipv ipv1 ->
+                                  ipv1 })
+                                 eta of ds1 { (#,#) ipv ipv1 ->
+                          case go2 ys ipv of ds2 { (#,#) ipv2 ipv3 ->
+                          (# ipv2,
+                             GHC.Types.:
+                               @ [(KMeansPar.Cluster, GHC.Types.Double)]
+                               (case ipv1 of wild1 { Control.Parallel.Strategies.Lift x1 -> x1 })
+                               ipv3 #) } } }
+                 } in
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             [[(KMeansPar.Cluster, GHC.Types.Double)]] #)
+                        (go2 ww) of ds1 { (#,#) ipv ipv1 ->
+                 KMeansPar.kmeans_go ipv1 }) -}
+ebe2724c185949a968a010439ee1345b
+  $wsomaClusters ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# [KMeansPar.Ponto]
+    -> [([GHC.Types.Double], GHC.Types.Double)]
+  {- Arity: 3, Strictness: <S,U><S,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# [KMeansPar.Ponto]) ->
+                 case GHC.Prim.># ww ww1 of lwild {
+                   DEFAULT
+                   -> let {
+                        wild2 :: GHC.Types.Int = GHC.Types.I# ww1
+                      } in
+                      let {
+                        wild1 :: GHC.Types.Int = GHC.Types.I# ww
+                      } in
+                      letrec {
+                        go2 :: GHC.Prim.Int# -> [([GHC.Types.Double], GHC.Types.Double)]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ ([GHC.Types.Double], GHC.Types.Double)
+                            (let {
+                               tup :: [KMeansPar.Ponto]
+                               = case GHC.Prim.<=# ww x of lwild1 {
+                                   DEFAULT
+                                   -> case KMeansPar.kmeans3 wild2 wild1 x
+                                      ret_ty [KMeansPar.Ponto]
+                                      of {}
+                                   1#
+                                   -> case GHC.Prim.<=# x ww1 of lwild2 {
+                                        DEFAULT
+                                        -> case KMeansPar.kmeans3 wild2 wild1 x
+                                           ret_ty [KMeansPar.Ponto]
+                                           of {}
+                                        1#
+                                        -> case GHC.Prim.indexArray#
+                                                  @ [KMeansPar.Ponto]
+                                                  ww2
+                                                  (GHC.Prim.-# x ww) of ds3 { Unit# ipv ->
+                                           ipv } } }
+                             } in
+                             (GHC.Base.map
+                                @ [GHC.Types.Double]
+                                @ GHC.Types.Double
+                                KMeansPar.kmeans1
+                                (Data.OldList.transpose @ GHC.Types.Double tup),
+                              case GHC.List.$wlenAcc
+                                     @ [GHC.Types.Double]
+                                     tup
+                                     0# of ww3 { DEFAULT ->
+                              GHC.Types.D# (GHC.Prim.int2Double# ww3) }))
+                            (case GHC.Prim.==# x ww1 of lwild1 {
+                               DEFAULT -> go2 (GHC.Prim.+# x 1#)
+                               1# -> GHC.Types.[] @ ([GHC.Types.Double], GHC.Types.Double) })
+                      } in
+                      go2 ww
+                   1# -> GHC.Types.[] @ ([GHC.Types.Double], GHC.Types.Double) }) -}
+51adc8c83d85c9c1dcc5c00468c9a4a3
+  (.+.) :: GHC.Num.Num a => [a] -> [a] -> [a]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C(C1(U)),A,A,A,A,A,A)><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) (eta :: [a]) (eta1 :: [a]) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b1 (c1 :: a -> b1 -> b1)[OneShot] (n :: b1)[OneShot] ->
+                    GHC.List.foldr2
+                      @ a
+                      @ a
+                      @ b1
+                      (GHC.List.zipWithFB @ a @ b1 @ b1 @ a @ a c1 (GHC.Num.+ @ a $dNum))
+                      n
+                      eta
+                      eta1)) -}
+76741a16f9550d9fbdd0e62639654a44
+  (.-.) :: GHC.Num.Num a => [a] -> [a] -> [a]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C(C1(U)),A,A,A,A,A)><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) (eta :: [a]) (eta1 :: [a]) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b1 (c1 :: a -> b1 -> b1)[OneShot] (n :: b1)[OneShot] ->
+                    GHC.List.foldr2
+                      @ a
+                      @ a
+                      @ b1
+                      (GHC.List.zipWithFB @ a @ b1 @ b1 @ a @ a c1 (GHC.Num.- @ a $dNum))
+                      n
+                      eta
+                      eta1)) -}
+436794594e2c99f7fcf605764b51b979
+  (./) ::
+    (GHC.Float.Floating a, GHC.Base.Functor f) => f a -> a -> f a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(A,C(C1(U)),A,A),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,U>,
+     Unfolding: (\ @ a
+                   @ f :: * -> *
+                   ($dFloating :: GHC.Float.Floating a)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (eta :: f a)
+                   (eta1 :: a) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional a
+                   = GHC.Float.$p1Floating @ a $dFloating
+                 } in
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ a
+                   @ a
+                   (\ (ds :: a) -> GHC.Real./ @ a $dFractional ds eta1)
+                   eta) -}
+3c70ef540e8169c44ca746d5d27e1363
+  (.^) ::
+    (GHC.Float.Floating a, GHC.Base.Functor f) =>
+    f a -> GHC.Types.Int -> f a
+  {- Arity: 4,
+     Strictness: <L,1*U(1*U(1*U(A,A,C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,U>,
+     Unfolding: (\ @ a
+                   @ f :: * -> *
+                   ($dFloating :: GHC.Float.Floating a)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (eta :: f a)
+                   (eta1 :: GHC.Types.Int) ->
+                 let {
+                   $dNum :: GHC.Real.Fractional a
+                   = GHC.Float.$p1Floating @ a $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num a = GHC.Real.$p1Fractional @ a $dNum
+                 } in
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ a
+                   @ a
+                   (\ (ds :: a) ->
+                    GHC.Real.^
+                      @ a
+                      @ GHC.Types.Int
+                      $dNum1
+                      GHC.Real.$fIntegralInt
+                      ds
+                      eta1)
+                   eta) -}
+c9444823c29aa8604cfcd5cab064e92f
+  data ChunksOf a = ChunksOf [a]
+40cd52e4f6efbe62e43f7dfab3316c0e
+  type Cluster = [GHC.Types.Double]
+9767d22d0214b02656e1359c9edc7f84
+  type Ponto = [GHC.Types.Double]
+d5a4c2d2904104c9abbbc37c5c015106
+  assign ::
+    [KMeansPar.Cluster]
+    -> [KMeansPar.Ponto]
+    -> GHC.Arr.Array GHC.Types.Int [KMeansPar.Ponto]
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+3d4bc20c6651947722aa67cb3ecdf948
+  kmeans ::
+    GHC.Types.Int
+    -> KMeansPar.ChunksOf [KMeansPar.Ponto]
+    -> [KMeansPar.Cluster]
+    -> [(KMeansPar.Cluster, GHC.Types.Double)]
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(1*U)><L,U>, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: KMeansPar.ChunksOf [KMeansPar.Ponto])
+                   (w2 :: [KMeansPar.Cluster]) ->
+                 case w1 of ww { KMeansPar.ChunksOf ww1 ->
+                 KMeansPar.$wkmeans ww1 w2 }) -}
+8ca1ec5c4ca9ca780d37fd9a48a1ef52
+  kmeans1 :: [GHC.Types.Double] -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.List.foldl
+                   @ GHC.Types.Double
+                   @ GHC.Types.Double
+                   GHC.Float.plusDouble
+                   KMeansPar.kmeans2) -}
+d51311b586bc0754109c9edf12aa7b4d
+  kmeans2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0##) -}
+18829a14090b247dd3cd03613d7067d2
+  kmeans3 ::
+    GHC.Types.Int -> GHC.Types.Int -> GHC.Prim.Int# -> GHC.Types.Int
+  {- Arity: 3, Strictness: <B,U><B,U><B,U>x -}
+e6f0071cb95dc43cc0dfe957eb9004c0
+  kmeans_go ::
+    [[(KMeansPar.Cluster, GHC.Types.Double)]]
+    -> [(KMeansPar.Cluster, GHC.Types.Double)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+9f9c2685c1e281127e2ef3f151b1866b
+  kmeans_go1 :: [(KMeansPar.Cluster, GHC.Types.Double)] -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+286c55d5611a729bd0418c45c0fd225f
+  length' :: GHC.Num.Num b => [a] -> b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),1*U(A,A,A,A,A,A,1*C1(U))><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b @ a ($dNum :: GHC.Num.Num b) (xs :: [a]) ->
+                 GHC.Num.fromInteger
+                   @ b
+                   $dNum
+                   (case GHC.List.$wlenAcc @ a xs 0# of ww2 { DEFAULT ->
+                    GHC.Integer.Type.smallInteger ww2 })) -}
+46989786fc9f3423e9b01b8d300dc75b
+  somaClusters ::
+    GHC.Arr.Array GHC.Types.Int [KMeansPar.Ponto]
+    -> [(KMeansPar.Cluster, GHC.Types.Double)]
+  {- Arity: 1, Strictness: <S(S(S)S(S)LS),1*U(U(U),U(U),A,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Arr.Array GHC.Types.Int [KMeansPar.Ponto]) ->
+                 case w of ww { GHC.Arr.Array ww1 ww2 ww3 ww4 ->
+                 case ww1 of ww5 { GHC.Types.I# ww6 ->
+                 case ww2 of ww7 { GHC.Types.I# ww8 ->
+                 KMeansPar.$wsomaClusters ww6 ww8 ww4 } } }) -}
+1a2b1843938937ff53b2aa587dc1cafd
+  somaVetor :: GHC.Num.Num a => [[a]] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*C(C1(U)),A,A,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: (\ @ a ($dNum :: GHC.Num.Num a) (xs :: [[a]]) ->
+                 GHC.Base.map
+                   @ [a]
+                   @ a
+                   (GHC.List.foldl
+                      @ a
+                      @ a
+                      (GHC.Num.+ @ a $dNum)
+                      (GHC.Num.fromInteger @ a $dNum KMeansPar.somaVetor1))
+                   (Data.OldList.transpose @ a xs)) -}
+cc234c62e308d9e1f7bab559bf08301c
+  somaVetor1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+792706bd9e092a074ac10ee70d92ecce
+  step ::
+    [KMeansPar.Cluster]
+    -> [KMeansPar.Ponto] -> [(KMeansPar.Cluster, GHC.Types.Double)]
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (cs :: [KMeansPar.Cluster]) (ps :: [KMeansPar.Ponto]) ->
+                 let {
+                   x :: [(KMeansPar.Cluster, GHC.Types.Double)]
+                   = KMeansPar.somaClusters (KMeansPar.assign cs ps)
+                 } in
+                 case KMeansPar.kmeans_go1 x of wild { () -> x }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
