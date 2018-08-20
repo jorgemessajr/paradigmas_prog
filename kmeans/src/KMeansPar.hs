@@ -46,7 +46,7 @@ somaVetor :: (Num a) =>[[a]] -> [a]
 somaVetor xs = map sum . transpose $ xs
 
 somaClusters :: Array Int [Ponto] -> [(Cluster, Double)]
-somaClusters arr = map (tupla) (assocs arr)
+somaClusters arr =  (map (tupla) (assocs arr))
   where
     tupla tup = ( (somaVetor (snd tup)), length' (snd tup))
 
@@ -56,4 +56,10 @@ step cs ps  = force cs'  -- força avaliação para não deixar o trabalho pra t
     cs' = somaClusters $ assign cs ps
 
 kmeans :: Int -> ChunksOf [Ponto] -> [Cluster] -> [Cluster]
-kmeans it (ChunksOf pss) cs = 
+kmeans it pss cs = vetor
+  where
+    --cs'              = naoVazios
+    --naoVazios = filter (not.null) ponderado
+    --somado =  (map sum . transpose) ponderado
+    --ponderado = map (map (\x->(./) (fst x) (snd x))) vetor
+    vetor = map (\x -> step cs x) pss `using` parList rseq

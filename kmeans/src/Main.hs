@@ -29,7 +29,8 @@ main = do
       clusters = take k train
 
   start <- getTime Monotonic
-
+  let clusters' = kmeans it chunks clusters
+  print clusters'
 
   stop <- getTime Monotonic
   fprint (timeSpecs % "\\n") start stop

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-08-19 04:03:34.4355934 UTC
+2018-08-20 17:33:11.1893856 UTC
 
 interface main:KMeansPar 8043
-  interface hash: 65ca9d909ee71fe6b90a3e6bc1a5be84
-  ABI hash: 8d21a493829fdf86e0d12fc6dc5534ca
+  interface hash: 14804cd793d876c2cb9a6a57e47a87c2
+  ABI hash: 9d9f2fc058898c618465dcbb251030ec
   export-list hash: 04746c922dcef96ce739a73b08f31eee
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 3c63d80ed12fe44f41a88679f337db88
@@ -117,10 +117,9 @@ f8a56a8575a2f8dee5149c603cb190df
 7d5ab113994f381d64ef6de0b643c921
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-4f35e3b74da4d1cc37693409912957a7
+91d5c7e9354cc8cf40aea845c8e24350
   $wkmeans ::
-    [[KMeansPar.Ponto]]
-    -> [KMeansPar.Cluster] -> [(KMeansPar.Cluster, GHC.Types.Double)]
+    [[KMeansPar.Ponto]] -> [KMeansPar.Cluster] -> [KMeansPar.Cluster]
   {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0],
      Unfolding: (\ (ww :: [[KMeansPar.Ponto]])
                    (w :: [KMeansPar.Cluster]) ->
@@ -344,12 +343,12 @@ d5a4c2d2904104c9abbbc37c5c015106
     -> [KMeansPar.Ponto]
     -> GHC.Arr.Array GHC.Types.Int [KMeansPar.Ponto]
   {- Arity: 2, Strictness: <S,U><S,U> -}
-3d4bc20c6651947722aa67cb3ecdf948
+1d3210c48084c9c6db42ac2a2cdbf6f1
   kmeans ::
     GHC.Types.Int
     -> KMeansPar.ChunksOf [KMeansPar.Ponto]
     -> [KMeansPar.Cluster]
-    -> [(KMeansPar.Cluster, GHC.Types.Double)]
+    -> [KMeansPar.Cluster]
   {- Arity: 3, Strictness: <L,A><S(S),1*U(1*U)><L,U>, Inline: [0],
      Unfolding: InlineRule (3, True, False)
                 (\ (w :: GHC.Types.Int)
@@ -372,10 +371,9 @@ d51311b586bc0754109c9edf12aa7b4d
   kmeans3 ::
     GHC.Types.Int -> GHC.Types.Int -> GHC.Prim.Int# -> GHC.Types.Int
   {- Arity: 3, Strictness: <B,U><B,U><B,U>x -}
-e6f0071cb95dc43cc0dfe957eb9004c0
+b62b30a12a0b2e8d50e1021f871c400d
   kmeans_go ::
-    [[(KMeansPar.Cluster, GHC.Types.Double)]]
-    -> [(KMeansPar.Cluster, GHC.Types.Double)]
+    [[([GHC.Types.Double], GHC.Types.Double)]] -> [[GHC.Types.Double]]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
 9f9c2685c1e281127e2ef3f151b1866b
   kmeans_go1 :: [(KMeansPar.Cluster, GHC.Types.Double)] -> ()
